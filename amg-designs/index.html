@@ -7,48 +7,54 @@
     <title>Abi Matthews-Gordon Website</title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
+<body class="full-page home-page">
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-6"></div>
+            <!-- picture -->
+            <div class="col-5">
+                <div class="img-round-container main-photo">
+                    <img src="images/Abi_NoB.png" alt="">
+                </div>
+            </div>
 
             <!-- description -->
-            <div class="col-5">
-                <h1><span>Hello, My name is </span>Abi Matthews-Gordon</h1>
-                <h2>Software Engineer</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus, elit vitae molestie feugiat, leo elit iaculis nisl, eu tincidunt nibh ipsum eget nunc. Praesent pretium massa quis libero dapibus, in ornare sapien tristique. Curabitur convallis rhoncus libero. Praesent pretium massa quis libero dapibus, in ornare sapien tristique. Curabitur convallis rhoncus libero.
+            <div class="col-5 description">
+                <h1 class="intro red"><span>Hello, My name is </span>Abi Matthews-Gordon</h1>
+                <h2 class="title">Software Engineer</h2>
+                <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus, elit vitae molestie feugiat, 
+                    leo elit iaculis nisl, eu tincidunt nibh ipsum eget nunc. Praesent pretium massa quis libero dapibus, 
+                    in ornare sapien tristique. Curabitur convallis rhoncus libero. Praesent pretium massa quis libero 
+                    dapibus, in ornare sapien tristique. Curabitur convallis rhoncus libero. Praesent pretium massa quis
+                    libero dapibus, in ornare sapien tristique. Curabitur convallis rhoncus libero
                 </p>
 
                 <!-- links -->
                 <div>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                    <a href="#"><i class="bi bi-github"></i></a>
-                </div>
-
-                <!-- about me -->
-                <div>
-                    <a href="#">
-                        More About Me
-                        <i class="bi bi-arrow-right-circle-fill"></i>
-                    </a>
+                    <a href="#" class="professional-links"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="professional-links"><i class="bi bi-github"></i></a>
+                    <a href="#" class="professional-links"><i class="bi bi-twitter"></i></a>
+                    <!-- about me -->
+                    <a href="#" class="about-link"> More About Me <span><i class="bi bi-arrow-right-circle-fill"></i></span></a>
                 </div>
             </div>
 
             <!-- menu -->
-            <div class="col-1">
+            <div class="col-2">
                 <nav class="home-page-menu">
                     <ul>
-                        <li><a href=""><i class="bi bi-house-door-fill"></i></a></li>
-                        <li><a href=""><i class="bi bi-person-fill"></i></a></li>
-                        <li><a href=""><i class="bi bi-briefcase-fill"></i></a></li>
-                        <li><a href=""><i class="bi bi-pencil-fill"></i></a></li>
-                        <li><a href=""><i class="bi bi-envelope-fill"></i></a></li>
+                        <li><a href="" class="menu-items"><i class="bi bi-house-door-fill"></i></a></li>
+                        <li><a href="" class="menu-items"><i class="bi bi-person-fill"></i></a></li>
+                        <li><a href="" class="menu-items"><i class="bi bi-briefcase-fill"></i></a></li>
+                        <li><a href="" class="menu-items"><i class="bi bi-pencil-fill"></i></a></li>
+                        <li><a href="" class="menu-items"><i class="bi bi-envelope-fill"></i></a></li>
                     </ul>
                 </nav>
             </div>
