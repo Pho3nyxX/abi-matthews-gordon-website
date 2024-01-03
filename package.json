@@ -1,0 +1,22 @@
+{
+  "name": "abi-matthews-gordon-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf amg-designs/dist/js/site.js && rm -rf amg-designs/dist/css/styles.css",
+    "init": "npm run clean && cp -r amg-designs/styles/fonts  amg-designs/dist/css && cp -r amg-designs/images amg-designs/dist",
+    "bundle": "npm run init && node ./esbuild.config.js",
+    "build": "npm run bundle -- production",
+    "start": "npm run bundle -- development"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  },
+  "devDependencies": {
+    "esbuild": "0.19.11"
+  }
+}
