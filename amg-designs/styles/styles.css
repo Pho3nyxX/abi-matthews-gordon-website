@@ -41,6 +41,7 @@ body.full-page>.container-fluid,
 body.full-page>.container-fluid>.row {
     height: 100%;
 }
+
 /*
 
 body.full-page>.container-fluid>.row>aside {
@@ -81,21 +82,21 @@ h6.red {
     color: var(--red-color);
 }
 
-p{
-    font-family: 'PT Sans Narrow', sans-serif;  
+p {
+    font-family: 'PT Sans Narrow', sans-serif;
 }
 
 /* --------------------------------- */
 /* 2. IMAGE */
 /* --------------------------------- */
 
-.img-round-container{
+.img-round-container {
     border-radius: 50%;
     overflow: hidden;
     position: relative;
 }
 
-.img-round-container > img{
+.img-round-container>img {
     max-width: 150%;
     max-height: 150%;
     position: absolute;
@@ -105,7 +106,7 @@ p{
 /* --------------------------------- */
 /* 3. HOME PAGE */
 /* --------------------------------- */
-.main-photo{
+.main-photo {
     max-width: 620px;
     max-height: 620px;
     height: 100%;
@@ -113,32 +114,32 @@ p{
     background-color: var(--grey-color);
 }
 
-.home-page .description .intro{
+.home-page .description .intro {
     font-size: 58px;
     line-height: 1;
     margin-bottom: 24px;
 }
 
-.home-page .description .intro > span{
+.home-page .description .intro>span {
     font-size: 32px;
     color: #000;
     display: block;
     margin-bottom: 14px;
 }
 
-.home-page .description .title{
+.home-page .description .title {
     font-size: 43px;
     color: #000;
     margin-bottom: 48px;
     line-height: 1;
 }
 
-.home-page .description p{
+.home-page .description p {
     font-size: 22px;
     margin-bottom: 38px;
 }
 
-.home-page .professional-links{
+.home-page .professional-links {
     display: inline-block;
     height: 47px;
     width: 47px;
@@ -151,7 +152,7 @@ p{
     margin-right: 22px;
 }
 
-.home-page .about-link{
+.home-page .about-link {
     line-height: 42px;
     position: relative;
     display: inline-block;
@@ -165,7 +166,7 @@ p{
     padding-right: 65px;
 }
 
-.home-page .about-link span{
+.home-page .about-link span {
     display: inline-block;
     border: 3px solid #fff;
     width: 55px;
@@ -179,11 +180,11 @@ p{
     top: -6px;
 }
 
-.home-page-menu ul{
+.home-page-menu ul {
     list-style-type: none;
 }
 
-.home-page-menu ul .menu-items{
+.home-page-menu ul .menu-items {
     height: 74px;
     width: 74px;
     line-height: 74px;
@@ -196,12 +197,141 @@ p{
     font-size: 28px;
 }
 
+/* --------------------------------- */
+/* 7. ABOUT PAGE */
+/* --------------------------------- */
+.about-page .header{
+    text-transform: uppercase;
+}
 
-/* --------------------------------- */
-/* 2. Skills */
-/* --------------------------------- */
+.about-page .header .title>span {
+    font-size: 42px;
+    color: var(--red-color);
+    display: inline-block;
+}
 
-/* --------------------------------- */
-/* 7. ABOUT */
-/* --------------------------------- */
+/* description section */
+.img-skill {
+    height: 350px;
+    background-color: var(--grey-color);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
 
+/* skills section */
+.skill-sec{
+    background-color: var(--grey-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.skill-sec > h3{
+    font-size: 37px;
+    margin-bottom: 31px;
+}
+
+.progress-bar-white {
+    height: 8px;
+    width: 100%;
+    background-color: var(--progress-bar-grey-color);
+    border-radius: 5px;
+}
+
+.progress-bar-progress {
+    height: 8px;
+    background-color: var(--blue-color);
+    border-radius: 5px;
+    width: 50%;
+}
+
+.skills{
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* experience & education section */
+.experience-education > h3{
+    font-size: 37px;
+    margin-bottom: 31px;
+}
+
+.red-circle {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: var(--red-color);
+    text-align: center;
+}
+
+.icon-color {
+    color: var(--off-white-color);
+    font-size: 35px;
+    line-height: 60px;
+}
+
+.vertical-bar {
+    background-color: var(--vertical-grey-color);
+    margin: auto;
+}
+
+.vertical-bar-left {
+    height: 110px;
+    width: 2px;
+}
+
+.vertical-bar-right {
+    height: 125px;
+    width: 2px;
+}
+
+.blue-tag {
+    height: 45px;
+    width: 130px;
+    background-color: var(--blue-color);
+    border-radius: 50px;
+}
+
+.blue-tag > p{
+    font-weight: 600;
+    text-align: center;
+    line-height: 45px;
+}
+
+.bold-upper {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* certificate section */
+.cerificate > h3{
+    font-size: 37px;
+    margin-bottom: 31px;
+}
+
+.distributor {
+    background-color: var(--distributor-blue-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.distributor .distributor-name{
+    font-size: 20px;
+}
+.cert-description > p{
+    font-size: 18px;
+}
+
+.cert-description {
+    background-color: var(--discription-light-blue-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.cert-description > .title {
+    font-weight: 600;
+    font-size: 19px;
+    text-align: left;
+}
