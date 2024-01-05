@@ -205,11 +205,13 @@ p {
 /* --------------------------------- */
 /*          3. ABOUT PAGE */
 /* --------------------------------- */
-.about-page .header {
+.about-page, .header, 
+.blog-page header {
     text-transform: uppercase;
 }
 
-.about-page .header .title {
+.about-page .header .title, 
+.blog-page .header .title {
     margin-bottom: 51px;
     line-height: 1;
     font-size: 52px;
