@@ -2,22 +2,27 @@
 /* Author: Abi Matthews-Gordon */
 
 /* --------------------------------- */
-/* 1. General */
+/*          1. General */
 /* --------------------------------- */
 :root {
     --red-color: #FF0035;
     --grey-prof-color: #545454;
-
-    /* --grey-color: #dddcdc; */
-    --grey-color: #eeeeee;
+    --off-red-color: #e02f46;
+    --green-color: #84b813;
     --off-white-color: #F1F7ED;
+    --light-green-color: #e9f5d2;;
+    --certificate-distributor-green-color: #c0d594;
+    --certificate-description-light-green-color: #e5eed1;
+    --progress-bar-grey-color: #9b9a9a;
+
+
+    --grey-color: #d9d6d6;
+    /* --grey-color: #aca7a7; */
     --menu-icon-color: #1e253012;
     --blue-color: #12eaea;
-    --distributor-blue-color: #b5ecec;
-    --progress-bar-grey-color: #cdc9c9;
-    --discription-light-blue-color: #dcf2f2;
     --vertical-grey-color: #cdc9c9;
     /* --skills-background-color: #EFE0E0; */
+    /* --grey-color: #dddcdc; */
 }
 
 html {
@@ -54,7 +59,7 @@ body.full-page>.container-fluid>.row>aside {
 
 
 /* --------------------------------- */
-/* Typography */
+/*              Typography */
 /* --------------------------------- */
 
 a {
@@ -73,13 +78,13 @@ h6 {
     line-height: 1.3;
 }
 
-h1.red,
-h2.red,
-h3.red,
-h4.red,
-h5.red,
-h6.red {
-    color: var(--red-color);
+h1.off-red,
+h2.off-red,
+h3.off-red,
+h4.off-red,
+h5.off-red,
+h6.off-red {
+    color: var(--off-red-color);
 }
 
 p {
@@ -87,9 +92,19 @@ p {
 }
 
 /* --------------------------------- */
-/* 2. IMAGE */
+/*           2. HOME PAGE */
 /* --------------------------------- */
 
+/* image container */
+.main-photo {
+    max-width: 620px;
+    max-height: 620px;
+    height: 100%;
+    width: 100%;
+    background-color: var(--grey-color);
+}
+
+/* image */
 .img-round-container {
     border-radius: 50%;
     overflow: hidden;
@@ -102,18 +117,7 @@ p {
     position: absolute;
     top: -28%;
 }
-
-/* --------------------------------- */
-/* 3. HOME PAGE */
-/* --------------------------------- */
-.main-photo {
-    max-width: 620px;
-    max-height: 620px;
-    height: 100%;
-    width: 100%;
-    background-color: var(--grey-color);
-}
-
+/* description */
 .home-page .description .intro {
     font-size: 58px;
     line-height: 1;
@@ -139,6 +143,7 @@ p {
     margin-bottom: 38px;
 }
 
+/* links */
 .home-page .professional-links {
     display: inline-block;
     height: 47px;
@@ -190,7 +195,7 @@ p {
     line-height: 74px;
     text-align: center;
     border-radius: 50%;
-    background-color: var(--red-color);
+    background-color: var(--off-red-color);
     margin-bottom: 24px;
     display: inline-block;
     color: #fff;
@@ -198,15 +203,22 @@ p {
 }
 
 /* --------------------------------- */
-/* 7. ABOUT PAGE */
+/*          3. ABOUT PAGE */
 /* --------------------------------- */
-.about-page .header{
+.about-page .header {
     text-transform: uppercase;
 }
 
+.about-page .header .title {
+    margin-bottom: 51px;
+    line-height: 1;
+    font-size: 52px;
+    text-align: center;
+}
+
 .about-page .header .title>span {
-    font-size: 42px;
-    color: var(--red-color);
+    font-size: 52px;
+    color: var(--off-red-color);
     display: inline-block;
 }
 
@@ -218,41 +230,51 @@ p {
     overflow: hidden;
     position: relative;
 }
-
-/* skills section */
-.skill-sec{
-    background-color: var(--grey-color);
-    padding-top: 30px;
-    padding-bottom: 30px;
+.about-description > h5{
+    margin-bottom: 30px;
+}
+.about-description{
+    margin-bottom: 61px;
 }
 
-.skill-sec > h3{
-    font-size: 37px;
+/* skills section */
+.skill-sec {
+    background-color: var(--grey-color);
+    padding: 40px;
+}
+
+.skill-sec>h3 {
+    font-size: 50px;
     margin-bottom: 31px;
 }
 
-.progress-bar-white {
+.progress-bar-grey {
     height: 8px;
     width: 100%;
     background-color: var(--progress-bar-grey-color);
     border-radius: 5px;
 }
 
-.progress-bar-progress {
+.progress-bar-progress-red {
     height: 8px;
-    background-color: var(--blue-color);
+    background-color: var(--off-red-color);
     border-radius: 5px;
     width: 50%;
 }
-
-.skills{
+.progress-bar-progress-green {
+    height: 8px;
+    background-color: var(--green-color);
+    border-radius: 5px;
+    width: 50%;
+}
+.skills {
     margin-bottom: 0;
     font-weight: 600;
     font-size: 18px;
 }
 
 /* experience & education section */
-.experience-education > h3{
+.experience-education>h3 {
     font-size: 37px;
     margin-bottom: 31px;
 }
@@ -261,7 +283,7 @@ p {
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    background-color: var(--red-color);
+    background-color: var(--off-red-color);
     text-align: center;
 }
 
@@ -286,14 +308,14 @@ p {
     width: 2px;
 }
 
-.blue-tag {
+.grey-tag {
     height: 45px;
     width: 130px;
-    background-color: var(--blue-color);
+    background-color: var(--grey-color);
     border-radius: 50px;
 }
 
-.blue-tag > p{
+.grey-tag > p {
     font-weight: 600;
     text-align: center;
     line-height: 45px;
@@ -305,33 +327,39 @@ p {
 }
 
 /* certificate section */
-.cerificate > h3{
+.cerificate>h3 {
     font-size: 37px;
     margin-bottom: 31px;
 }
 
 .distributor {
-    background-color: var(--distributor-blue-color);
+    background-color: var(--certificate-distributor-green-color);
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.distributor .distributor-name{
+
+.distributor .distributor-name {
     font-size: 20px;
 }
-.cert-description > p{
+
+.cert-description>p {
     font-size: 18px;
 }
 
 .cert-description {
-    background-color: var(--discription-light-blue-color);
+    background-color: var(--certificate-description-light-green-color);
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.cert-description > .title {
+.cert-description>.title {
     font-weight: 600;
     font-size: 19px;
     text-align: left;
 }
+
+/* --------------------------------- */
+/*         4. BLOG PAGE */
+/* --------------------------------- */
