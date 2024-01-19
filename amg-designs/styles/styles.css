@@ -7,6 +7,7 @@
 :root {
     --grey-prof-color: #545454;
     --off-red-color: #e02f46;
+    /* --off-red-color: #ac0dfb; */
     --green-color: #84b813;
     --off-white-color: #F1F7ED;
     --home-page-hover-light-green-color: #84b8137b;
@@ -48,17 +49,90 @@ body.full-page>.container-fluid>.row {
     height: 100%;
 }
 
-/*
-
-body.full-page>.container-fluid>.row>aside {
+/* body.full-page>.container-fluid>.row>aside {
     height: 100%;
     width: 350px;
     background-color: var(--blue-color);
     overflow-y: auto;
+} */
+
+/********** navbar *************/
+.main-nav{
+    background-color: var(--grey-color);
+}
+
+.main-nav ul li.nav-item a.nav-link{
+    border-radius: 20px;
+    padding: 8px 35px;
+}
+
+.main-nav ul li a:hover{
+    background-color: var(--green-color);
+    color: #fff;
+}
+
+.container-fluid > a > span{
+    color: var(--green-color);
+    font-weight: bold;
+}
+
+.container-fluid > .name{
+    color: var(--off-red-color);
+    font-weight: bold;
+}
+
+/********** footer *************/
+.footer{
+    background-color: #7a8f4c;;
+    color: #fff;
+}
+
+.footer .nav-link {
+    color: #fff;
+}
+.footer .copyright{
+    border-top: 1px solid;
+}
+
+/* professional links */
+.about-page .footer-professional-links,
+.blog-page .footer-professional-links, 
+.blog-description-page .footer-professional-links,
+.portfolio-page .footer-professional-links {
+    background-color: var(--off-red-color);
+}
+
+/********** page title *************/
+.about-page .header .title,
+.blog-page .header .title,
+.portfolio-page .header .title,
+.contact-page .header .title {
+    margin-bottom: 51px;
+    line-height: 1;
+    font-size: 52px;
+    text-align: center;
 }
 
 
+.blog-intro p,
+.portfolio-intro p,
+.contact-intro p {
+    text-transform: none;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 48px;
+}
 
+.blog-intro h2,
+.portfolio-intro h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blog-page .container .load,
+.portfolio-page .container .load {
+    color: var(--off-red-color);
+}
 /* --------------------------------- */
 /*              Typography */
 /* --------------------------------- */
@@ -74,7 +148,6 @@ h3,
 h4,
 h5,
 h6 {
-    color: #000;
     font-family: 'Abril Fatface', serif;
     line-height: 1.3;
 }
@@ -93,7 +166,7 @@ p {
 }
 
 /* --------------------------------- */
-/*           2. HOME PAGE */
+/*           1. HOME PAGE */
 /* --------------------------------- */
 
 /* image container */
@@ -145,13 +218,10 @@ p {
     font-size: 22px;
     margin-bottom: 38px;
 }
-
-/* links */
-.home-page .professional-links {
+.professional-links{
     display: inline-block;
     height: 47px;
     width: 47px;
-    background-color: var(--green-color);
     border-radius: 50%;
     color: #fff;
     text-align: center;
@@ -159,16 +229,22 @@ p {
     font-size: 23px;
     margin-right: 22px;
 }
+/* links */
+.home-page .home-professional-links {
+    background-color: var(--green-color);
+}
 
 .home-page a>i {
     font-size: 23px;
 }
 
-.home-page .prof-link-icon {
+.home-page .prof-link-icon,
+.contact-page .contact-link-icon {
     color: #000;
 }
 
-.home-page .about-link {
+.home-page .about-link,
+.contact-page .send-link {
     line-height: 42px;
     position: relative;
     display: inline-block;
@@ -184,7 +260,8 @@ p {
     color: #000;
 }
 
-.home-page .about-link span {
+.home-page .about-link span,
+.contact-page .send-link span {
     display: inline-block;
     border: 3px solid #fff;
     width: 55px;
@@ -244,20 +321,9 @@ p {
     outline: 8px solid var(--home-page-hover-light-green-color);
 }
 
-
-
 /* --------------------------------- */
 /*          3. ABOUT PAGE */
 /* --------------------------------- */
-.about-page .header .title,
-.blog-page .header .title,
-.portfolio-page .header .title {
-    margin-bottom: 51px;
-    line-height: 1;
-    font-size: 52px;
-    text-align: center;
-}
-
 .about-page .header .title>span {
     font-size: 52px;
     color: var(--off-red-color);
@@ -273,12 +339,21 @@ p {
     position: relative;
 }
 
+.skill-contact-link > a {
+    padding: 8px 30px;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: var(--green-color);
+    color: #fff;
+    text-transform: uppercase;
+}
+
 .about-description>h5 {
     margin-bottom: 30px;
 }
 
 .about-description {
-    margin-bottom: 61px;
+    margin-bottom: 34px;
 }
 
 /* skills section */
@@ -288,7 +363,7 @@ p {
 }
 
 .skill-sec>h3 {
-    font-size: 50px;
+    font-size: 37px;
     margin-bottom: 31px;
 }
 
@@ -345,12 +420,17 @@ p {
 }
 
 .vertical-bar-left {
-    height: 140px;
+    height: 145px;
     width: 2px;
 }
 
-.vertical-bar-right {
-    height: 140px;
+.vertical-bar-top-right {
+    height: 195px;
+    width: 2px;
+}
+
+.vertical-bar-bottom-right {
+    height: 195px;
     width: 2px;
 }
 
@@ -409,21 +489,6 @@ p {
 /* --------------------------------- */
 /*         4. BLOG PAGE */
 /* --------------------------------- */
-
-/* ********home page******** */
-.blog-intro p,
-.portfolio-intro p {
-    text-transform: none;
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 48px;
-}
-
-.blog-intro h2,
-.portfolio-intro h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 /* cards */
 .card-container {
@@ -490,11 +555,6 @@ p {
     font-size: 22px;
 }
 
-.blog-page .container .load,
-.portfolio-page .container .load {
-    color: var(--off-red-color);
-}
-
 /* ********description page******** */
 
 .blog-description-page h1 {
@@ -534,14 +594,12 @@ p {
     font-size: 38px;
 }
 
-
 /* --------------------------------- */
 /*         5. PORTFOLIO PAGE */
 /* --------------------------------- */
 
 .portfolio-item {
     height: 490px;
-    /* width: 580px; */
     border: 1px solid #4d4c4c;
     position: relative;
     overflow: hidden;
@@ -593,7 +651,6 @@ p {
     background-color: var(--portfolio-opacity-green-color);
     position: absolute;
     bottom: 0;
-    /* opacity: .8; */
 }
 
 .portfolio-item:hover .portfolio-description {
@@ -630,3 +687,7 @@ p {
     color: #fff;
     text-transform: uppercase;
 }
+
+/* --------------------------------- */
+/*         6. CONTACT PAGE */
+/* --------------------------------- */

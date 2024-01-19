@@ -7,7 +7,7 @@
     <title>Abi Matthews-Gordon Website</title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
@@ -16,8 +16,42 @@
 
 <body class="full-page about-page">
 
-    <div class="container">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg main-nav ps-5 sticky-lg-top shadow">
+        <div class="container-fluid">
+            <!-- my name -->
+            <a href="#" class="navbar-brand name"><span>Abi </span>Matthews-Gordon<span>.</span></a>
 
+            <!-- hamburger menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="expand navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- nav links -->
+            <div class="collapse navbar-collapse justify-content-center" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- content -->
+    <div class="container">
         <!-- about me header -->
         <div class="row mt-5 mb-5 header">
             <div class="col ">
@@ -29,19 +63,27 @@
         <div class="row mb-5">
             <div class="col-5 about-description">
                 <h5 class="off-red mt-3">Building stuff brings me joy.</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Pellentesque pharetra, erat ac iaculis efficitur, libero elit
-                    vestibulum massa, sed lobortis massa leo eget ligula. Praesent
-                    lacus orci, vestibulum et consectetur at, hendrerit in purus.
-                    Sed maximus augue at molestie pulvinar. Aenean eget aliquet mi.
-                    Maecenas ut mi nisl. </p>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Pellentesque pharetra, erat ac iaculis efficitur, libero elit
-                    vestibulum massa, sed lobortis massa leo eget ligula. Praesent
-                    lacus orci, vestibulum et consectetur at, hendrerit in purus.
-                    Sed maximus augue at molestie pulvinar. Aenean eget aliquet mi.
-                    Maecenas ut mi nisl.</p>
+                <p>I am a Software Engineer and UI Designer with a bachelor's degree in Computer
+                    Science. During my studies, I found many areas I was passionate about so it
+                    was difficult to decide what path I should take. Ultimately, I narrowed down
+                    my choices to three: Artificial Intelligence (AI), Cybersecurity, and Project
+                    Management. Fortunately, these fields interconnect in significant ways.</p>
+
+                <p>To excel in security, it is necessary to understand the systems I aim to
+                    secure. Moreover, AI is crucial in enhancing software functionality and
+                    improving lives, warranting its protection and maintenance. Additionally,
+                    having led multiple projects during university, I aimed to bolster my
+                    leadership skills to ensure seamless team dynamics. My goal is to develop
+                    secure, groundbreaking applications that enrich and enhance lives.</p>
+
+                <p>Lately, I have been nurturing a passion for UI Design paying keen attention
+                    to learning and applying design principles, trends, and best practices such
+                    as accessibility.</p>
+
+                <p>I am seeking job opportunities where I can contribute, expand my knowledge, and continue to grow.
+                    If you have an opportunity that aligns with my skills and experience, I would love to explore it
+                    further. Feel free to reach out.</p>
             </div>
 
             <!-- image -->
@@ -50,91 +92,125 @@
                     <img style="margin-top: -125px; margin-left: -175px;" src="" alt="">
                 </div>
             </div>
+
+            <!-- contact link -->
+            <div class="col-4">
+                <div class="skill-contact-link">
+                    <a href="">Get In Touch</a>
+                </div>
+            </div>
         </div>
 
         <!-- skills -->
         <div class="row skill-sec mb-5">
+
             <!-- header -->
             <h3 class="off-red">My Skills</h3>
 
             <!-- first column -->
             <div class="col">
-                <p class="skills">C#</p>
+                <p class="skills">C# - (45%)</p>
                 <div class="progress-bar-grey mb-3">
-                    <div class="progress-bar-progress-red" style="width: 40%;"></div>
+                    <div class="progress-bar-progress-red" style="width: 45%;"></div>
                 </div>
 
-                <p class="skills">Bootstrap</p>
+                <p class="skills">Bootstrap - (60%)</p>
                 <div class="progress-bar-grey mb-3">
                     <div class="progress-bar-progress-green" style="width: 60%;"></div>
                 </div>
 
-                <p class="skills">UI/UX Design</p>
+                <p class="skills">UI/UX Design - (35%)</p>
                 <div class="progress-bar-grey mb-3">
                     <div class="progress-bar-progress-red" style="width: 35%;"></div>
                 </div>
 
-                <p class="skills">Debugging</p>
+                <p class="skills">Debugging - (30%)</p>
                 <div class="progress-bar-grey mb-3">
                     <div class="progress-bar-progress-green" style="width: 30%;"></div>
                 </div>
 
-                <p class="skills">Git</p>
+                <p class="skills">Version Control Systems - (65%)</p>
                 <div class="progress-bar-grey mb-3">
-                    <div class="progress-bar-progress-red" style="width: 40%;"></div>
+                    <div class="progress-bar-progress-red" style="width: 65%;"></div>
+                </div>
+
+                <p class="skills">SQL - (45%)</p>
+                <div class="progress-bar-grey mb-3">
+                    <div class="progress-bar-progress-green" style="width: 45%;"></div>
+                </div>
+
+                <p class="skills">Github - (65%)</p>
+                <div class="progress-bar-grey mb-3">
+                    <div class="progress-bar-progress-red" style="width: 65%;"></div>
                 </div>
             </div>
 
             <!-- second column -->
             <div class="col">
-                <p class="skills">HTML</p>
+                <p class="skills">HTML - (75%)</p>
                 <div class="progress-bar-grey mb-3">
                     <div class="progress-bar-progress-green" style="width: 75%;"></div>
                 </div>
 
-                <p class="skills">CSS</p>
+                <p class="skills">CSS - (60%)</p>
                 <div class="progress-bar-grey mb-3">
                     <div class="progress-bar-progress-red" style="width: 60%;"></div>
                 </div>
 
-                <p class="skills">Entity Framework (EF) Core</p>
+                <p class="skills">Entity Framework (EF) Core - (30%)</p>
                 <div class="progress-bar-grey mb-3">
                     <div class="progress-bar-progress-green" style="width: 30%;"></div>
                 </div>
 
-                <p class="skills">.Net</p>
+                <p class="skills">.Net - (30%)</p>
                 <div class="progress-bar-grey mb-3">
                     <div class="progress-bar-progress-red" style="width: 30%;"></div>
                 </div>
 
-                <p class="skills">JavaScript</p>
+                <p class="skills">JavaScript - (40%)</p>
                 <div class="progress-bar-grey mb-3">
                     <div class="progress-bar-progress-green" style="width: 40%;"></div>
+                </div>
+
+                <p class="skills">Cypress - (50%)</p>
+                <div class="progress-bar-grey mb-3">
+                    <div class="progress-bar-progress-red" style="width: 50%;"></div>
                 </div>
             </div>
 
             <!-- third column -->
             <div class="col">
-                <p class="skills">Java</p>
+                <p class="skills">Java - (70%)</p>
                 <div class="progress-bar-grey mb-3">
                     <div class="progress-bar-progress-red" style="width: 70%;"></div>
                 </div>
 
-                <p class="skills">Node</p>
+                <p class="skills">Node - (60%)</p>
                 <div class="progress-bar-grey mb-3">
                     <div class="progress-bar-progress-green" style="width: 60%;"></div>
                 </div>
 
-                <p class="skills">ASP .Net MVC</p>
+                <p class="skills">ASP .Net MVC - (30%)</p>
                 <div class="progress-bar-grey mb-3">
                     <div class="progress-bar-progress-red" style="width: 30%;"></div>
                 </div>
 
-                <p class="skills">Scrum</p>
+                <p class="skills">Scrum - (48%)</p>
                 <div class="progress-bar-grey mb-3">
                     <div class="progress-bar-progress-green" style="width: 48%;"></div>
                 </div>
+
+                <p class="skills">Test Automation Scripts - (50%)</p>
+                <div class="progress-bar-grey mb-3">
+                    <div class="progress-bar-progress-red" style="width: 50%;"></div>
+                </div>
+
+                <p class="skills">WebDriver - (30%)</p>
+                <div class="progress-bar-grey mb-3">
+                    <div class="progress-bar-progress-green" style="width: 30%;"></div>
+                </div>
             </div>
+
         </div>
 
         <!-- experience & education -->
@@ -155,7 +231,7 @@
 
                     <!-- description -->
                     <div class="col-10">
-                        <!-- blue tag -->
+                        <!-- grey tag -->
                         <div class="grey-tag mb-4">
                             <!-- year -->
                             <p class="fs-5">2023</p>
@@ -163,9 +239,10 @@
 
                         <div>
                             <p class="fs-5 mb-2"><span class="bold-upper">Software Engineer</span> - Microsoft Leap</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra, erat ac
-                                iaculis efficitur, libero elit vestibulum massa, sed lobortis massa leo eget ligula. Pellentesque pharetra, erat ac
-                                iaculis efficitur, libero elit vestibulum massa, sed lobortis massa leo eget ligula.</p>
+                            <p>Designed and developed features such as profile creation and
+                                management, career aspiration, goals and interest, skill
+                                assessment, mentorship and booking for a Youth Empowerment
+                                Platform.</p>
                         </div>
 
                     </div>
@@ -179,13 +256,13 @@
                     <div class="col-2">
                         <div class="red-circle">
                             <i class="bi bi-mortarboard-fill icon-color"></i>
-                            <div class="vertical-bar vertical-bar-right"></div>
+                            <div class="vertical-bar vertical-bar-top-right"></div>
                         </div>
                     </div>
 
                     <!-- description -->
                     <div class="col-10">
-                        <!-- blue tag -->
+                        <!-- grey tag -->
                         <div class="grey-tag mb-4">
                             <!-- year -->
                             <p class="fs-5">2018 - 2023</p>
@@ -193,9 +270,11 @@
 
                         <div>
                             <p class="fs-5 mb-2"><span class="bold-upper">Computer Science Degree</span> - The University of Technology, Jamaica</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra, erat ac
-                                iaculis efficitur, libero elit vestibulum massa, sed lobortis massa leo eget ligula. Pellentesque pharetra, erat ac
-                                iaculis efficitur, libero elit vestibulum massa, sed lobortis massa leo eget ligula.
+                            <p>Learned about algorithms, data structures, software engineering,
+                                and how computers work. I studied programming languages, databases,
+                                and how to design systems. I also worked on projects with
+                                classmates to solve problems and create new ideas in different
+                                areas.
                             </p>
                         </div>
 
@@ -207,20 +286,20 @@
                     <div class="col-2">
                         <div class="red-circle">
                             <i class="bi bi-mortarboard-fill icon-color"></i>
-                            <div class="vertical-bar vertical-bar-right"></div>
+                            <div class="vertical-bar vertical-bar-bottom-right"></div>
                         </div>
                     </div>
 
                     <!-- description -->
                     <div class="col-10">
-                        <!-- blue tag -->
+                        <!-- grey tag -->
                         <div class="grey-tag mb-4">
                             <!-- year -->
                             <p class="fs-5">2012 - 2013</p>
                         </div>
 
                         <div>
-                            <p class="fs-5 mb-2"><span class="bold-upper">Diploma</span> - University of the Commonwealth Caribbean</p>
+                            <p class="fs-5 mb-2"><span class="bold-upper">Diploma in Computer Studies</span> - University of the Commonwealth Caribbean</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra, erat ac
                                 iaculis efficitur, libero elit vestibulum massa, sed lobortis massa leo eget ligula. Pellentesque pharetra, erat ac
                                 iaculis efficitur, libero elit vestibulum massa, sed lobortis massa leo eget ligula.</p>
@@ -246,9 +325,9 @@
 
                         <!-- description -->
                         <div class="col-6 cert-description">
-                            <p class="mb-0 ms-3 title">Software Engineer</p>
-                            <p class="mb-0 ms-3">Leap Apprenticeship Program</p>
-                            <p class="mb-0 ms-3">15 December 2023</p>
+                            <!-- <p class="mb-0 ms-3 title">Software Engineer</p> -->
+                            <p class="mb-0 ms-">Leap Apprenticeship Program</p>
+                            <p class="mb-0 ms-">15 December 2023</p>
                         </div>
                     </div>
                 </div>
@@ -262,9 +341,9 @@
 
                         <!-- description -->
                         <div class="col-6 cert-description">
-                            <p class="mb-0 ms-3 title">Manual Tester</p>
-                            <p class="mb-0 ms-3">Agile Software Testing Bootcamp</p>
-                            <p class="mb-0 ms-3">27 September 2022</p>
+                            <!-- <p class="mb-0 ms-3 title">Manual Tester</p> -->
+                            <p class="mb-0 ms-">Agile Software Testing Bootcamp</p>
+                            <p class="mb-0 ms-">27 September 2022</p>
                         </div>
                     </div>
                 </div>
@@ -282,9 +361,9 @@
 
                         <!-- description -->
                         <div class="col-6 cert-description">
-                            <p class="mb-0 ms-3 title">Automation Tester</p>
-                            <p class="mb-0 ms-3">UI Test Automation Bootcamp</p>
-                            <p class="mb-0 ms-3">28 December 2022</p>
+                            <!-- <p class="mb-0 ms-3 title">Automation Tester</p> -->
+                            <p class="mb-0 ms-">UI Test Automation Bootcamp</p>
+                            <p class="mb-0 ms-">28 December 2022</p>
                         </div>
                     </div>
                 </div>
@@ -298,9 +377,9 @@
 
                         <!-- description -->
                         <div class="col-6 cert-description">
-                            <p class="mb-0 ms-3 title">?????????</p>
-                            <p class="mb-0 ms-3">Azure Fundamental Certificate</p>
-                            <p class="mb-0 ms-3">28 February 2023</p>
+                            <!-- <p class="mb-0 ms-3 title">?????????</p> -->
+                            <p class="mb-0 ms-">Azure Fundamentals</p>
+                            <p class="mb-0 ms-">28 February 2023</p>
                         </div>
                     </div>
                 </div>
@@ -319,9 +398,9 @@
 
                         <!-- description -->
                         <div class="col-6 cert-description">
-                            <p class="mb-0 ms-3 title">?????????</p>
-                            <p class="mb-0 ms-3">Azure AI Fundamentals Certificate</p>
-                            <p class="mb-0 ms-3">24 June 2023</p>
+                            <!-- <p class="mb-0 ms-3 title">?????????</p> -->
+                            <p class="mb-0 ms-">Azure AI Fundamentals</p>
+                            <p class="mb-0 ms-">24 June 2023</p>
                         </div>
                     </div>
                 </div>
@@ -335,9 +414,9 @@
 
                         <!-- description -->
                         <div class="col-6 cert-description">
-                            <p class="mb-0 ms-3 title">?????????</p>
-                            <p class="mb-0 ms-3">AWS Cloud Practitioner Certificate</p>
-                            <p class="mb-0 ms-3">11 April 2023</p>
+                            <!-- <p class="mb-0 ms-3 title">?????????</p> -->
+                            <p class="mb-0 ms-">AWS Cloud Practitioner</p>
+                            <p class="mb-0 ms-">11 April 2023</p>
                         </div>
                     </div>
                 </div>
@@ -345,6 +424,42 @@
         </div>
     </div>
 
+    <!-- footer -->
+    <footer class="footer mt-5">
+        <div class="container">
+
+            <div class="row">
+                <!-- nav links -->
+                <div class="col mt-5">
+                    <h3>Abi Matthews-Gordon</h3>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link ps-0" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col mt-5">
+                    <p>Get in touch</p>
+                    <a href="#" class="professional-links footer-professional-links"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="professional-links footer-professional-links"><i class="bi bi-github prof-link-icon"></i></a>
+                </div>
+            </div>           
+            <p class="text-center copyright mt-3 pt-3 pb-3">Copyright &copy; 2024. Designed and Built by Abi Matthews-Gordon</p>
+        </div>
+    </footer>
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="scripts/site.js"></script>
