@@ -98,7 +98,8 @@ body.full-page>.container-fluid>.row {
 .about-page .footer-professional-links,
 .blog-page .footer-professional-links, 
 .blog-description-page .footer-professional-links,
-.portfolio-page .footer-professional-links {
+.portfolio-page .footer-professional-links,
+.contact-page .footer-professional-links {
     background-color: var(--off-red-color);
 }
 
@@ -112,7 +113,6 @@ body.full-page>.container-fluid>.row {
     font-size: 52px;
     text-align: center;
 }
-
 
 .blog-intro p,
 .portfolio-intro p,
@@ -309,12 +309,13 @@ p {
 .home-page-menu ul .menu-items >span{
     position: absolute;
     right: 80px;
-    color:#000;
+    /* color:#000; */
+    color: #fff;
     visibility: hidden;
 }
-.home-page-menu ul .menu-items:hover >span{
+.home-page-menu ul .menu-items:hover >span, 
+.home-page-menu ul li:hover .menu-items>span{
     visibility: visible;
-    color: #fff;
 }
 .home-page-menu ul .menu-items:hover {
     background-color: var(--green-color);
