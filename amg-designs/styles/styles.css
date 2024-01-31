@@ -10,6 +10,7 @@
     --bronze-color: #DD7F24;
     --dark-bronze-color: #BC5331;
     --home-page-menu-hover-color: #DD7F247b;
+    --text-color: #292A2D;
    
 }
 
@@ -79,7 +80,7 @@ body.full-page>.container-fluid>.row {
 .blog-description-page .footer-professional-links,
 .portfolio-page .footer-professional-links,
 .contact-page .footer-professional-links {
-    background-color: var(--off-red-color);
+    background-color: var(--bronze-color);
 }
 
 .footer h3 a {
@@ -147,14 +148,14 @@ h6 {
     line-height: 1.3;
 }
 
-h1.off-red,
+/* h1.off-red,
 h2.off-red,
 h3.off-red,
 h4.off-red,
 h5.off-red,
 h6.off-red {
     color: var(--off-red-color);
-}
+} */
 
 p {
     font-family: 'PT Sans', sans-serif;
@@ -166,8 +167,8 @@ p {
 
 /* image container */
 .main-photo {
-    max-width: 620px;
-    max-height: 620px;
+    max-width: 560px;
+    max-height: 560px;
     height: 100%;
     width: 100%;
     background-color: var(--grey-color);
@@ -187,48 +188,53 @@ p {
     top: -28%;
 }
 
+.home-page .content{
+    margin-top: 210px;
+}
+
 /* description */
 .home-page .description .intro {
     font-size: 58px;
     line-height: 1;
-    margin-bottom: 24px;
-    color: var(--green-color);
+    margin-bottom: 14px;
+    color: var(--text-color);
 }
 
 .home-page .description .intro>span {
     font-size: 32px;
-    color: #000;
+    color: var(--text-color);
     display: block;
     margin-bottom: 14px;
 }
 
 .home-page .description .title {
     font-size: 43px;
-    color: #000;
-    margin-bottom: 48px;
+    color: var(--bronze-color);
+    margin-bottom: 40px;
     line-height: 1;
 }
 
 .home-page .description p {
-    font-size: 22px;
-    margin-bottom: 38px;
+    font-size: 21px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid var(--bronze-color);
 }
 
 .professional-links {
     display: inline-block;
-    height: 47px;
-    width: 47px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
-    color: #fff;
+    /* color: #fff; */
     text-align: center;
-    line-height: 47px;
+    line-height: 60px;
     font-size: 23px;
     margin-right: 22px;
 }
 
 /* links */
 .home-page .home-professional-links {
-    background-color: var(--green-color);
+    background-color: var(--bronze-color);
 }
 
 .home-page a>i {
@@ -237,39 +243,28 @@ p {
 
 .home-page .prof-link-icon,
 .contact-page .contact-link-icon {
-    color: #000;
+    color: #fff;
 }
 
 .home-page .about-link,
 .contact-page .send-link {
-    line-height: 42px;
-    position: relative;
+    line-height: 60px;
     display: inline-block;
-    font-size: 22px;
-    background-color: var(--green-color);
+    background-color: var(--bronze-color);
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
-    border-radius: 23px;
-    border: 2px solid #000;
+    border-radius: 38px;
     padding-left: 20px;
-    padding-right: 65px;
-    color: #000;
+    padding-right: 30px;
 }
 
 .home-page .about-link span,
 .contact-page .send-link span {
-    display: inline-block;
-    border: 3px solid #fff;
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     line-height: 50px;
-    font-size: 20px;
-    border-radius: 50%;
-    text-align: center;
-    position: absolute;
-    right: 0;
-    top: -6px;
+    font-size: 15px;
 }
 
 .home-page-menu ul {
