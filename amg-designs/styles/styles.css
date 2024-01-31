@@ -42,23 +42,75 @@ body.full-page>.container-fluid>.row {
 
 /********** navbar *************/
 .main-nav {
-    background-color: var(--grey-color);
+    /* background-color: var(--grey-color); */
 }
 
-.main-nav ul li.nav-item a.nav-link {
-    padding: 12px 35px;
+.main-nav ul li.nav-item a.nav-link  {
+    padding: 12px 40px;
+    /* display: block; */
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    position: relative;
 }
 
+.main-nav ul li.nav-item a.nav-link::before  {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-color: var(--bronze-color);
+    transition: width 0.3s ease;
+}
+
+.main-nav ul li.nav-item a.nav-link:hover::before  {
+    width: 100%;
+}
+
+.main-nav ul li.nav-item a.nav-link:hover{
+    color: var(--bronze-color);
+}
+
+.moon{
+    color: var(--bronze-color);
+}
+
+.moon>i{
+    font-size: 20px;
+}
+
+/* 
 .main-nav ul li a:hover {
-    background-color: var(--opacity-green-color);
-    color: #fff;
-}
+    background-color: var(--bronze-color);
+    color: var(--bronze-color);
+} */
 
 .container>.name {
-    color: var(--green-color);
+    color: var(--bronze-color);
     font-weight: bold;
     font-size: 25px;
 }
+
+/* .logo-round-container{
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #c3bdbd;
+}
+
+.logo-round-container>img{
+    max-width: 150%;
+    max-height: 150%;
+    position: absolute;
+    top: -28%;
+}
+
+.logo-photo{
+    max-width: 40px;
+    max-height: 45px;
+    height: 100%;
+    width: 100%;
+} */
 
 /********** footer *************/
 .footer {
@@ -75,13 +127,13 @@ body.full-page>.container-fluid>.row {
 }
 
 /* professional links */
-.about-page .footer-professional-links,
+/* .about-page .footer-professional-links,
 .blog-page .footer-professional-links,
 .blog-description-page .footer-professional-links,
 .portfolio-page .footer-professional-links,
 .contact-page .footer-professional-links {
     background-color: var(--bronze-color);
-}
+} */
 
 .footer h3 a {
     color: #fff;
@@ -171,7 +223,7 @@ p {
     max-height: 580px;
     height: 100%;
     width: 100%;
-    background-color: var(--grey-color);
+    /* background-color: var(--grey-color); */
 }
 
 /* image */
@@ -191,7 +243,6 @@ p {
 
 .home-page .content{
     margin-top: 180px;
-    /* position: absolute; */
 }
 
 /* description */
@@ -238,7 +289,7 @@ p {
 }
 
 /* links */
-.home-page .home-professional-links {
+.home-page .professional-links {
     background-color: var(--bronze-color);
 }
 
@@ -246,10 +297,14 @@ p {
     font-size: 23px;
 }
 
-.home-page .prof-link-icon,
-.contact-page .contact-link-icon {
+i.white{
     color: #fff;
 }
+
+/* .home-page .prof-link-icon,
+.contact-page .contact-link-icon {
+    color: #fff;
+} */
 
 .home-page .about-link,
 .contact-page .send-link {
@@ -262,13 +317,6 @@ p {
     border-radius: 38px;
     padding-left: 12px;
     padding-right: 20px;
-}
-
-.contact-page .send-link span {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 15px;
 }
 
 .home-page-menu{
@@ -335,10 +383,6 @@ p {
 .home-page-menu ul .menu-items:hover>span,
 .home-page-menu ul li:hover .menu-items>span {
     visibility: visible;
-}
-
-.home-page-menu ul .menu-items:hover {
-    background-color: var(--green-color);
 }
 
 /* --------------------------------- */
@@ -723,3 +767,10 @@ p {
 /* --------------------------------- */
 /*         6. CONTACT PAGE */
 /* --------------------------------- */
+
+.contact-page .send-link span {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+}
