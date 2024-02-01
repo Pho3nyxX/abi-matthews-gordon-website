@@ -65,7 +65,7 @@
     <div class="container">
 
         <!-- blog header -->
-        <div class="row mt-5 mb-5 header">
+        <div class="row mt-5 header">
             <div class="col-7 blog-intro">
                 <h1 class="title">Blog</h1>
 
@@ -83,7 +83,35 @@
             </div>
         </div>
 
-        <!-- sort -->
+        <div class="row justify-content-end blog-display-container">
+            <!-- sort -->
+            <div class="col-2 text-end blog-display-method">
+                <div class="dropdown blog-dropdown">
+                    <button class="btn btn-secondary dropdown-toggle blog-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Sort 
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Alphabetically</a></li>
+                      <li><a class="dropdown-item" href="#">Release date</a></li>
+                      <li><a class="dropdown-item" href="#">Minutes read</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- format -->
+            <div class="col-2 text-end blog-display-method">
+                <div class="dropdown blog-dropdown">
+                    <button class="btn btn-secondary dropdown-toggle blog-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Display format
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Row</a></li>
+                      <li><a class="dropdown-item" href="#">List</a></li>
+                      <li><a class="dropdown-item" href="#">Roadmap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <!-- cards -->
         <!-- row 1 -->

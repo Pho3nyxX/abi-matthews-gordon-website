@@ -612,9 +612,62 @@ i.white {
 
 .blog-page .header .blog-intro p{
     line-height: 1.78;
-    margin-bottom: 70px;
-    /* border-bottom: 2px solid var(--bronze-color); */
+    margin-bottom: 120px;
 }
+
+.blog-page .blog-display-container{
+    border-top: 2px solid var(--bronze-color);
+}
+
+.blog-page .blog-display-container .blog-display-method{
+    margin-top: 20px;
+}
+
+.blog-page .blog-display-container .blog-display-method .blog-btn{
+    background-color: #F4BD8A;
+    border: none;
+    color: #000;
+    border-radius: 38px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.blog-page .blog-display-container .blog-display-method .blog-dropdown ul{
+    border-color: #F4BD8A;
+}
+
+.blog-page .blog-display-container .blog-display-method .blog-dropdown ul li a{
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    position: relative;
+}
+
+.blog-page .blog-display-container .blog-display-method .blog-dropdown ul li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-color: var(--bronze-color);
+    transition: width 0.3s ease;
+}
+
+.blog-page .blog-display-container .blog-display-method .blog-dropdown ul li a:hover::before{
+    width: 100%;
+}
+
+.blog-page .blog-display-container .blog-display-method .blog-dropdown ul li a:hover{
+    color: var(--bronze-color);
+}
+
+.blog-page .blog-display-container .blog-display-method .blog-dropdown ul li a:active{
+    background-color: #fff;
+}
+
+
+
 
 /* cards */
 .card-container {
