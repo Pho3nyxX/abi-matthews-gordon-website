@@ -173,26 +173,10 @@ body.full-page>.container-fluid>.row {
     font-size: 18px;
 }
 
-.blog-intro p,
-.contact-intro p {
-    text-transform: none;
-    font-size: 18px;
-    margin-bottom: 48px;
-}
-
 .contact-intro p {
     text-align: center;
 }
 
-.blog-intro h2,
-.portfolio-intro h2 {
-    margin-bottom: 52px;
-}
-
-.blog-page .container .load,
-.portfolio-page .container .load {
-    color: var(--bronze-color);
-}
 
 /* --------------------------------- */
 /*              Typography */
@@ -305,7 +289,8 @@ p {
 .home-page .professional-links,
 .about-page .professional-links,
 .blog-page .professional-links,
-.blog-description-page .professional-links {
+.blog-description-page .professional-links,
+.portfolio-page .professional-links {
     background-color: var(--bronze-color);
 }
 
@@ -393,6 +378,11 @@ i.white {
     margin-bottom: 150px;
 }
 
+.about-page .about-section .about .about-description h1{
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+
 .about-img-container {
     border: 1px solid var(--bronze-color);
     border-radius: 10px;
@@ -408,98 +398,95 @@ i.white {
     margin-top: -90px;
 }
 
-.about-section .about {
+.about-page .about-section .about {
     margin-bottom: 120px;
 }
 
-.about-description>h1 {
-    margin-bottom: 10px;
-}
 
-.about-description span {
+.about-page .about-section .about .about-description span {
     color: var(--bronze-color);
 }
 
-.about-description h5 {
+.about-page .about-section .about .about-description h5 {
     margin-bottom: 40px;
 }
 
-.about-description p {
+.about-page .about-section .about .about-description p {
     line-height: 1.78;
 }
 
-.about-description .about-para {
+.about-page .about-section .about .about-description .about-para {
     margin-bottom: 45px;
     border-bottom: 1px solid var(--bronze-color);
 }
 
 /* skills section */
-.skill-sec {
+.about-page .about-section .skill-sec {
     margin-bottom: 120px;
 }
 
-.skill-sec span {
+.about-page .about-section .skill-sec span {
     color: var(--bronze-color);
 }
 
-.skill-sec>h3 {
+.about-page .about-section .skill-sec>h3 {
     font-size: 37px;
     margin-bottom: 15px;
 }
 
-.skill-sec p {
+.about-page .about-section .skill-sec p {
     margin-bottom: 50px;
     line-height: 1.78;
 }
 
-.skill-sec .skills .skill-heading {
+.about-page .about-section .skill-sec .skills .skill-heading {
     display: inline-block;
     margin-bottom: 20px;
     line-height: 35px;
     color: var(--bronze-color);
 }
 
-.skill-sec .skills .skill-text {
+.about-page .about-section .skill-sec .skills .skill-text {
     margin-bottom: 40px;
 }
 
-.skill-sec .skills .skill-img {
+.about-page .about-section .skill-sec .skills .skill-img {
     width: 35px;
     margin-right: 8px;
     display: inline;
     vertical-align: middle;
 }
 
-.skill-sec .skills .skill-lists {
+.about-page .about-section .skill-sec .skills .skill-lists {
     list-style: none;
     padding: 0;
     line-height: 3;
 }
 
-.skill-sec .skills .skill-lists li {
+.about-page .about-section .skill-sec .skills .skill-lists li {
     margin-bottom: 25px;
 }
 
-.skill-sec .skills .skill-lists img {
+.about-page .about-section .skill-sec .skills .skill-lists img {
     width: 45px;
     margin-right: 8px;
 }
 
 /* experience & education section */
-.experience-education {
+.about-page .about-section .experience-education {
     margin-bottom: 120px;
 }
 
-.experience-education h3>span {
+.about-page .about-section .experience-education h3>span {
     color: var(--bronze-color);
 }
 
-.experience-education>h3 {
+.about-page .about-section .experience-education>h3 {
     font-size: 37px;
     margin-bottom: 31px;
 }
 
-.experience-education-icon-container {
+.about-page .about-section .experience-education-icon-container {
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -507,67 +494,67 @@ i.white {
     text-align: center;
 }
 
-.experience-education-icon-container>i {
+.about-page .about-section .experience-education-icon-container>i {
     font-size: 28px;
     line-height: 60px;
 }
 
-.vertical-bar {
+.about-page .about-section .vertical-bar {
     background-color: #c9a27c;
     margin: auto;
 }
 
-.vertical-bar-left {
+.about-page .about-section .vertical-bar-left {
     height: 130px;
     width: 2px;
 }
 
-.vertical-bar-top-right {
+.about-page .about-section .vertical-bar-top-right {
     height: 185px;
     width: 2px;
 }
 
-.vertical-bar-bottom-right {
+.about-page .about-section .vertical-bar-bottom-right {
     height: 185px;
     width: 2px;
 }
 
-.tag {
+.about-page .about-section .tag {
     height: 45px;
     width: 130px;
     background-color: #F4BD8A;
     border-radius: 50px;
 }
 
-.tag>p {
+.about-page .about-section .tag>p {
     text-align: center;
     line-height: 45px;
 }
 
-.bold-upper {
+.about-page .about-section .bold-upper {
     text-transform: uppercase;
     font-weight: 600;
 }
 
-.experience-education .description>.text {
+.about-page .about-section .experience-education .description>.text {
     line-height: 1.78;
 }
 
 /* certificate section */
-.certificate-section {
-    margin-bottom: 100px;
+.about-page .about-section .certificate-section {
+    margin-bottom: 130px;
 }
 
-.certificate-section .cerificate>h3 {
+.about-page .about-section .certificate-section .cerificate>h3 {
     font-size: 37px;
     margin-bottom: 31px;
 }
 
-.certificate-section .cerificate h3>span {
+.about-page .about-section .certificate-section .cerificate h3>span {
     color: var(--bronze-color);
 }
 
-.distributor {
+.about-page .about-section .distributor {
     background-color: #fae0c1;
     position: relative;
     display: flex;
@@ -576,15 +563,15 @@ i.white {
     text-transform: uppercase;
 }
 
-.distributor .distributor-name {
+.about-page .about-section .distributor .distributor-name {
     font-size: 18px;
 }
 
-.cert-description>p {
+.about-page .about-section .cert-description>p {
     font-size: 18px;
 }
 
-.cert-description {
+.about-page .about-section .cert-description {
     background-color: #f7ece0;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -616,18 +603,37 @@ i.white {
 }
 
 /* header */
-.blog-page .header .blog-intro .title {
+.blog-page .header .blog-intro .title,
+.portfolio-page .header .portfolio-intro .title {
     color: var(--bronze-color);
 }
 
-.blog-page .header .blog-intro h2>span {
+.blog-page .header .blog-intro h2>span,
+.portfolio-page .header .portfolio-intro h2>span {
     color: var(--bronze-color);
+}
+
+.blog-page .blog-intro h2,
+.portfolio-page .portfolio-intro h2 {
+    margin-bottom: 52px;
 }
 
 .blog-page .header .blog-intro p {
     line-height: 1.78;
     margin-bottom: 120px;
+    font-size: 18px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /* display format */
 .blog-page .blog-display-container {
@@ -849,6 +855,10 @@ i.white {
 
 
 /* ********description page******** */
+.blog-description-page .blog-pagination-container{
+    margin-bottom: 130px;
+}
+
 .blog-image-container {
     height: 530px;
     background-color: #d7d2d2;
@@ -944,12 +954,12 @@ i.white {
     margin-bottom: 35px;
 }
 
-.blog-description-page .blog-pagination-container{
+.blog-description-page .blog-pagination-container {
     margin-left: 25px;
     display: flex;
 }
 
-.blog-description-page .blog-pagination-container .left{
+.blog-description-page .blog-pagination-container .left {
     margin-right: 615px;
 }
 
@@ -967,6 +977,10 @@ i.white {
 /* --------------------------------- */
 /*         5. PORTFOLIO PAGE */
 /* --------------------------------- */
+.portfolio-page .navbar {
+    margin-bottom: 150px;
+}
+
 .header .portfolio-intro {
     margin-bottom: 50px;
 }
@@ -975,7 +989,15 @@ i.white {
     font-size: 18px;
 }
 
-.portfolio-item {
+.portfolio-page .header .portfolio-intro .text {
+    margin-bottom: 120px;
+}
+
+.portfolio-page .header .portfolio-intro p {
+    line-height: 1.78;
+}
+
+.portfolio-page .portfolio-item {
     height: 490px;
     border: 1px solid #4d4c4c;
     position: relative;
@@ -984,7 +1006,7 @@ i.white {
 }
 
 /* image */
-.portfolio-display-image {
+.portfolio-page .portfolio-item .portfolio-display-image {
     position: absolute;
     width: 958px;
     top: -17px;
@@ -994,57 +1016,61 @@ i.white {
 }
 
 /* button container */
-.button-holder {
+.portfolio-page .portfolio-item  .button-holder {
     height: 60px;
-    background-color: #000;
     margin: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 80%);
 }
 
-.button-holder>p {
+.portfolio-page .portfolio-item  .button-holder p {
     display: inline-block;
-    color: #fff;
+    color: var(--dark-bronze-color);
     margin-right: 34px;
     text-transform: uppercase;
 }
 
 /* buttons */
-.button-holder .button-menu-item {
-    height: 40px;
-    width: 40px;
+.portfolio-page .portfolio-item .button-holder .button-menu-item {
+    height: 50px;
+    width: 50px;
     text-align: center;
     border-radius: 50%;
-    background-color: var(--off-red-color);
-    display: inline-block;
-    color: #fff;
-    font-size: 28px;
+    background-color: var(--bronze-color);
     display: inline-block;
     margin-right: 23px;
 }
 
-/* description */
-.portfolio-item .portfolio-description {
-    height: 60px;
-    width: 100%;
-    background-color: var(--portfolio-opacity-green-color);
-    position: absolute;
-    bottom: 0;
+.portfolio-page .portfolio-item .button-holder a i {
+    font-size: 28px;
+    line-height: 50px;
 }
 
-.portfolio-item:hover .portfolio-description {
+/* description */
+.portfolio-page .portfolio-item .portfolio-description {
+    height: 60px;
+    width: 100%;
+    background-color: #0E120Acc;
+    position: absolute;
+    bottom: 0;
+    border-top: 3px solid #DD7F24;
+}
+
+.portfolio-page .portfolio-item:hover .portfolio-description {
     height: 220px;
 }
 
-.portfolio-description>h3 {
+.portfolio-page .portfolio-item .portfolio-description>h3 {
     text-transform: uppercase;
     font-size: 20px;
-    color: var(--portfolio-project-title-green-color);
+    color: var(--bronze-color);
     margin-left: 30px;
     margin-top: 14px;
     margin-bottom: 15px;
     font-family: PT Sans;
 }
 
-.portfolio-description p {
+.portfolio-page .portfolio-item .portfolio-description p {
     color: #fff;
     margin-left: 30px;
     font-size: 18px;
@@ -1060,9 +1086,35 @@ i.white {
     margin-right: 20px;
     display: inline-block;
     border-radius: 6px;
-    background-color: var(--opacity-green-color);
+    background-color: #DD7F244d;
     color: #fff;
     text-transform: uppercase;
+}
+
+
+/* pagination */
+.blog-page .pagination-container,
+.portfolio-page .pagination-container{
+    margin-bottom: 130px;
+    margin-top: 80px;
+}
+
+.blog-page .pagination-container .pagination .page-item .page-link,
+.portfolio-page .pagination-container .pagination .page-item .page-link{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--bronze-color);
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.blog-page .pagination-container .pagination .page-item .page-link,
+.blog-page .pagination-container .pagination .page-item .page-link i,
+.portfolio-page .pagination-container .pagination .page-item .page-link,
+.portfolio-page .pagination-container .pagination .page-item .page-link i{
+    color: #000;
 }
 
 /* --------------------------------- */
@@ -1074,4 +1126,10 @@ i.white {
     height: 50px;
     line-height: 50px;
     font-size: 15px;
+}
+
+.contact-intro p {
+    text-transform: none;
+    font-size: 18px;
+    margin-bottom: 48px;
 }

@@ -54,12 +54,12 @@
     <!-- content -->
     <div class="container">
         <!-- porfolio header -->
-        <div class="row mt-5 header">
-            <div class="col portfolio-intro">
+        <div class="row header">
+            <div class="col-7 portfolio-intro">
                 <h1 class="title">Portfolio</h1>
                 
                 <!-- page title -->
-                <h2 class="off-red">My Recent Work</h2>
+                <h2>My <span>Recent Work</span></h2>
                 
                 <!-- page description -->
                 <p>This is a showcase of projects which reflect my dedication to creativity, 
@@ -76,14 +76,13 @@
                     gained, the lessons learned, and the creative processes that drive my 
                     work.</p>
                 
-                <p class="fst-italic">#curiosity #perseverance #lifelong-learning</p>
+                <p class="text">#curiosity #perseverance #lifelong-learning</p>
             </div>
         </div>
 
         <!-- card 1 -->
         <div class="row mb-5 gx-5">
 
-            <!-- first column -->
             <div class="col-6">
                 <div class="portfolio-item">
                     <!-- image -->
@@ -91,9 +90,8 @@
                     <!-- links -->
                     <div class="button-holder text-end">
                         <p>ASP .Net MVC</p>
-                        <a href="" class="button-menu-item mt-2"><i class="bi bi-github"></i></a>
-                        <a href="" class="button-menu-item mt-2"><i class="bi bi-arrow-up-right-circle"></i></a>
-                        <!-- <a href="" class="button-menu-item mt-2"><i class="bi bi-code"></i></a> -->
+                        <a href="" class="button-menu-item mt-2"><i class="bi bi-github white"></i></a>
+                        <a href="" class="button-menu-item mt-2"><i class="bi bi-arrow-up-right-circle white"></i></a>
                     </div>
                     <!-- description -->
                     <div class="portfolio-description">
@@ -113,7 +111,6 @@
                 </div>
             </div>
 
-            <!-- second column -->
             <div class="col-6">
                 <div class="portfolio-item">
                     <!-- image -->
@@ -121,9 +118,8 @@
                     <!-- links -->
                     <div class="button-holder text-end">
                         <p>ASP .Net MVC</p>
-                        <a href="" class="button-menu-item mt-2"><i class="bi bi-github"></i></a>
-                        <a href="" class="button-menu-item mt-2"><i class="bi bi-arrow-up-right-circle"></i></a>
-                        <!-- <a href="" class="button-menu-item mt-2"><i class="bi bi-code"></i></a> -->
+                        <a href="" class="button-menu-item mt-2"><i class="bi bi-github white"></i></a>
+                        <a href="" class="button-menu-item mt-2"><i class="bi bi-arrow-up-right-circle white"></i></a>
                     </div>
                     <!-- description -->
                     <div class="portfolio-description">
@@ -146,7 +142,7 @@
 
         <!-- card 2 -->
         <div class="row mb-5 gx-5">
-            <!-- first column -->
+
             <div class="col-6">
                 <div class="portfolio-item">
                     <!-- image -->
@@ -154,9 +150,8 @@
                     <!-- links -->
                     <div class="button-holder text-end">
                         <p>ASP .Net MVC</p>
-                        <a href="" class="button-menu-item mt-2"><i class="bi bi-github"></i></a>
-                        <a href="" class="button-menu-item mt-2"><i class="bi bi-arrow-up-right-circle"></i></a>
-                        <!-- <a href="" class="button-menu-item mt-2"><i class="bi bi-code"></i></a> -->
+                        <a href="" class="button-menu-item mt-2"><i class="bi bi-github white"></i></a>
+                        <a href="" class="button-menu-item mt-2"><i class="bi bi-arrow-up-right-circle white"></i></a>
                     </div>
                     <!-- description -->
                     <div class="portfolio-description">
@@ -176,7 +171,6 @@
                 </div>
             </div>
 
-            <!-- second column -->
             <div class="col-6">
                 <div class="portfolio-item">
                     <!-- image -->
@@ -184,9 +178,8 @@
                     <!-- links -->
                     <div class="button-holder text-end">
                         <p>ASP .Net MVC</p>
-                        <a href="" class="button-menu-item mt-2"><i class="bi bi-github"></i></a>
-                        <a href="" class="button-menu-item mt-2"><i class="bi bi-arrow-up-right-circle"></i></a>
-                        <!-- <a href="" class="button-menu-item mt-2"><i class="bi bi-code"></i></a> -->
+                        <a href="" class="button-menu-item mt-2"><i class="bi bi-github white"></i></a>
+                        <a href="" class="button-menu-item mt-2"><i class="bi bi-arrow-up-right-circle white"></i></a>
                     </div>
                     <!-- description -->
                     <div class="portfolio-description">
@@ -207,9 +200,16 @@
             </div>
         </div>
 
-
-        <!-- load more -->
-        <a href="" class="load">Load more...</a>
+        <!-- pagination -->
+        <nav class="pagination-container">
+            <ul class="pagination">
+                <li class="page-item"><a href="" class="page-link"><i class="bi bi-chevron-left"></i></a></li>
+                <li class="page-item"><a href="" class="page-link">1</a></li>
+                <li class="page-item"><a href="" class="page-link">2</a></li>
+                <li class="page-item"><a href="" class="page-link">3</a></li>
+                <li class="page-item"><a href="" class="page-link"><i class="bi bi-chevron-right"></i></a></li>
+            </ul>
+        </nav>
     </div>
 
     <!-- footer -->
@@ -218,7 +218,7 @@
 
             <div class="row">
                 <!-- nav links -->
-                <div class="col mt-5">
+                <div class="col-10 mt-5">
                     <h3 class="name"><a href="/amg-designs/index.html">Abi Matthews-Gordon</a></h3>
                     <ul class="nav">
                         <li class="nav-item">
@@ -239,10 +239,10 @@
                     </ul>
                 </div>
 
-                <div class="col mt-5">
+                <div class="col-2 mt-5">
                     <p>Get in touch</p>
-                    <a href="#" class="professional-links footer-professional-links"><i class="bi bi-linkedin"></i></a>
-                    <a href="#" class="professional-links footer-professional-links"><i class="bi bi-github prof-link-icon"></i></a>
+                    <a href="#" class="professional-links"><i class="bi bi-linkedin white"></i></a>
+                    <a href="#" class="professional-links"><i class="bi bi-github white"></i></a>
                 </div>
             </div>
             <p class="text-center copyright mt-3 pt-3 pb-3">Copyright &copy; 2024. Designed and Built by Abi Matthews-Gordon</p>
