@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -26,7 +27,7 @@
             </div> -->
 
             <!-- my name -->
-            <a href="/amg-designs/index.html" class="navbar-brand name">AMG</a>
+            <a href="index.html" class="navbar-brand name">AMG</a>
 
             <!-- hamburger menu -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="expand navigation">
@@ -49,7 +50,7 @@
                         <a class="nav-link" href="/amg-designs/portfolio-home.html">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/amg-designs/contact.html">Contact</a>
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal" href="/amg-designs/contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -65,31 +66,34 @@
 
         <!-- about -->
         <div class="row about">
-
             <div class="col-5 about-description">
                 <h1>About <span>Me</span></h1>
                 <h5>Building stuff <span>brings me joy</span>.</h5>
 
-                <p>I am a Software Engineer and UI Designer with a bachelor's degree in
-                    Computer Science. I have always found fascination in technology and its
-                    impact on the lives of individuals. My goal is to develop secure,
+                <p>I am a Software Engineer and UI Designer from Jamaica with a bachelor's 
+                    degree in Computer Science. I have always found fascination in technology 
+                    and its impact on the lives of individuals. My goal is to develop secure, 
                     imapactful, groundbreaking applications that will enrich and enhance lives.
                 </p>
 
-                <p>Lately, I have been nurturing a passion for UI Design paying keen attention
-                    to learning and applying design principles, trends, and best practices such
-                    as accessibility.</p>
+                <p>Lately, I have been nurturing a passion for UI Design paying keen attention 
+                    to learning and applying design principles, trends, and best practices such 
+                    as accessibility.
+                </p>
 
-                <p class="about-para pb-4">I am seeking job opportunities where I can contribute, expand my knowledge, and continue to grow.
-                    If you have an opportunity that aligns with my skills and experience, I would love to explore it
-                    further. Feel free to reach out.</p>
+                <p class="about-para">I am seeking job opportunities where I can contribute, 
+                    expand my knowledge, and continue to grow. If you have an opportunity that 
+                    aligns with my skills, interests and experience, I would love to explore it
+                    further. Feel free to reach out.
+                </p>
 
                 <!-- links -->
-                <div>
-                    <a href="#" class="professional-links"><i class="bi bi-linkedin white"></i></a>
-                    <a href="#" class="professional-links"><i class="bi bi-github white"></i></a>
+                <div class="links">
                     <!-- about me -->
-                    <a href="/amg-designs/contact.html" class="about-link"> Get in touch </a>
+                    <a href="contact.html" class="page-link contact" data-bs-toggle="modal" data-bs-target="#contactModal"> Get in touch </a> |
+
+                    <a href="#" class="professional-links linkedin"><i class="bi bi-linkedin white"></i></a>
+                    <a href="#" class="professional-links"><i class="bi bi-github white"></i></a>
                 </div>
             </div>
 
@@ -99,253 +103,212 @@
                     <img src="images/Abi_NoB.png" alt="">
                 </div>
             </div>
-
         </div>
-  
+
         <!-- skills -->
         <div class="row skill-sec">
             <!-- header -->
             <h3>My <span>Skills</span></h3>
-            <p>Report directly to the General Manager of the branch Receive calls, take messages,
-                and record requests correspondence Handle inquiries and Arrange and meetings and
-                take minutes Produce reports data.</p>
+            <h5>Some technologies and tools i have <span>worked with</span>.</h5>
 
             <!-- categories -->
             <div class="row ">
 
                 <!-- frontend -->
-                <div class="col-4 skills">
+                <div class="col-3 skills">
                     <h4 class="skill-heading">
-                        <img src="/amg-designs/images/computer-svgrepo-com.svg" alt="computer" class="skill-img">
+                        <img src="images/computer-svgrepo-com.svg" alt="computer" class="skill-img">
                         Frontend
                     </h4>
 
-                    <p class="skill-text">Your paragraph text Your paragraph text Your parag raph text Your
-                        paragraph text Your </p>
-
                     <ul class="skill-lists">
                         <li>
-                            <img src="/amg-designs/images/css-3-svgrepo-com.svg" alt="css-icon">CSS
+                            <img src="images/css-3-svgrepo-com.svg" alt="css-icon">CSS3
                         </li>
                         <li>
-                            <img src="/amg-designs/images/html-5-svgrepo-com.svg" alt="html-icon">HTML
+                            <img src="images/html-5-svgrepo-com.svg" alt="html-icon">HTML5
                         </li>
                         <li>
-                            <img src="/amg-designs/images/javascript-svgrepo-com.svg" alt="javascript-icon">JavaScript
+                            <img src="images/javascript-svgrepo-com.svg" class="img-decrease" alt="javascript-icon">JavaScript
                         </li>
                         <li>
-                            <img src="/amg-designs/images/bootstrap-svgrepo-com.svg" alt="bootstrap-icon">Bootstrap
+                            <img src="images/bootstrap-svgrepo-com.svg" class="img-decrease" alt="bootstrap-icon">Bootstrap
+                        </li>
+                        <li>
+                            <img src="images/bootstrap-svgrepo-com.svg" alt="bootstrap-icon">UI Design
                         </li>
                     </ul>
                 </div>
 
                 <!-- backend -->
-                <div class="col-4 skills">
+                <div class="col-3 skills">
                     <h4 class="skill-heading">
-                        <img src="/amg-designs/images/server-svgrepo-com.svg" alt="server" class="skill-img">
+                        <img src="images/server-svgrepo-com.svg" alt="server" class="skill-img">
                         Backend
                     </h4>
 
-                    <p>Your paragraph text Your paragraph text Your parag raph text Your
-                        paragraph text Your </p>
+                    <ul class="skill-lists">
+                        <li>
+                            <img src="images/csharp-svgrepo-com.svg" alt="node-icon">C#
+                        </li>
+                        <li>
+                            <img src="images/nodejs-svgrepo-com.svg" class="img-increase" alt="node-icon">Node JS
+                        </li>
+                        <li>
+                            <img src="images/java-svgrepo-com.svg" class="img-increase" alt="node-icon">Java
+                        </li>
+                        <li>
+                            <img src="images/asp-svgrepo-com.svg" alt="asp-icon">ASP .Net MVC
+                        </li>
+                        <li>
+                            <img src="images/database-svgrepo-com.svg" alt="database-design-icon">Database Design
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- testing -->
+                <div class="col-3 skills">
+                    <h4 class="skill-heading">
+                        <img src="images/tools-svgrepo-com.svg" alt="tools" class="skill-img">
+                        Testing
+                    </h4>
 
                     <ul class="skill-lists">
                         <li>
-                            <img src="/amg-designs/images/nodejs-svgrepo-com.svg" alt="node-icon">Node
+                            <img src="images/git-svgrepo-com.svg" alt="git-icon">WebDriver
                         </li>
                         <li>
-                            <img src="/amg-designs/images/asp-svgrepo-com.svg" alt="asp-icon">ASP .Net MVC
+                            <img src="images/cypress.png" alt="figma-icon">Cypress
                         </li>
                         <li>
-                            <img src="/amg-designs/images/database-svgrepo-com.svg" alt="database-design-icon">Database Design
+                            <img src="images/mysql-logo-svgrepo-com.svg" alt="mysql-icon">Regression Testing
                         </li>
                         <li>
-                            <img src="/amg-designs/images/dotnet-svgrepo-com.svg" alt="entity-framework-icon">Entity Framework (EF) Core
+                            <img src="images/visual-studio-svgrepo-com.svg" alt="vscode-icon">Test Automation
                         </li>
                     </ul>
                 </div>
 
                 <!-- tools -->
-                <div class="col-4 skills">
+                <div class="col-3 skills">
                     <h4 class="skill-heading">
-                        <img src="/amg-designs/images/tools-svgrepo-com.svg" alt="tools" class="skill-img">
+                        <img src="images/tools-svgrepo-com.svg" alt="tools" class="skill-img">
                         Tools
                     </h4>
 
-                    <p>Your paragraph text Your paragraph text Your parag raph text Your
-                        paragraph text Your </p>
-
                     <ul class="skill-lists">
                         <li>
-                            <img src="/amg-designs/images/git-svgrepo-com.svg" alt="git-icon">Git
+                            <img src="images/git-svgrepo-com.svg" alt="git-icon">Github
                         </li>
                         <li>
-                            <img src="/amg-designs/images/figma-svgrepo-com.svg" alt="figma-icon">Figma
+                            <img src="images/figma-svgrepo-com.svg" alt="figma-icon">Figma
                         </li>
                         <li>
-                            <img src="/amg-designs/images/mysql-logo-svgrepo-com.svg" alt="mysql-icon">MySQL
+                            <img src="images/mysql-logo-svgrepo-com.svg" class="img-increase-xl" alt="mysql-icon">MySQL
                         </li>
                         <li>
-                            <img src="/amg-designs/images/vscode-svgrepo-com.svg" alt="vscode-icon">VSCode
+                            <img src="images/visual-studio-svgrepo-com.svg" class="img-decrease" alt="vscode-icon">Visual Studio
                         </li>
                     </ul>
                 </div>
 
             </div>
+
+
+
         </div>
 
-        <!-- experience & education -->
-        <div class="row experience-education">
-            <!-- header -->
-            <h3>My <span>Experience & Education</span></h3>
+        <!-- experience, education & certificate -->
+        <div class="row education-cert-sec">
 
-            <!-- first column -->
-            <div class="col">
-                <div class="row">
-                    <!-- lollipop icon -->
-                    <div class="col-2">
-                        <div class="experience-education-icon-container">
-                            <i class="bi bi-briefcase-fill white"></i>
-                            <div class="vertical-bar vertical-bar-left"></div>
-                        </div>
-                    </div>
+            <div class="col gx-5">
+                <div class="row experience-education">
+                    <!-- header -->
+                    <h3>My <span>Experience & Education</span></h3>
 
-                    <!-- description -->
-                    <div class="col-10">
-                        <!-- tag -->
-                        <div class="tag mb-4">
-                            <p class="fs-5">2023</p>
-                        </div>
+                    <div class="col">
 
-                        <!-- text -->
-                        <div class="description">
-                            <p class="fs-5 mb-2"><span class="bold-upper">Software Engineer</span> - Microsoft Leap</p>
-                            <p class="text">Designed and developed features such as profile creation and
-                                management, career aspiration, goals and interest, skill
-                                assessment, mentorship and booking for a Youth Empowerment
-                                Platform.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <div class="row mb-4">
+                            <!-- lollipop icon -->
+                            <div class="col-2">
+                                <div class="experience-education-icon-container">
+                                    <i class="bi bi-briefcase-fill white"></i>
+                                    <div class="vertical-bar vertical-bar-first"></div>
+                                </div>
+                            </div>
 
-            <!-- second column -->
-            <div class="col">
+                            <!-- description -->
+                            <div class="col-10">
+                                <!-- tag -->
+                                <div class="tag mb-3">
+                                    <p class="fs-5">2023</p>
+                                </div>
 
-                <div class="row mb-5">
-                    <!-- lollipop icon -->
-                    <div class="col-2">
-                        <div class="experience-education-icon-container">
-                            <i class="bi bi-mortarboard-fill white"></i>
-                            <div class="vertical-bar vertical-bar-top-right"></div>
-                        </div>
-                    </div>
-
-                    <!-- description -->
-                    <div class="col-10">
-                        <!-- tag -->
-                        <div class="tag mb-4">
-                            <p class="fs-5">2018 - 2023</p>
+                                <!-- text -->
+                                <div class="description">
+                                    <p class="fs-5 mb-2"><span class="bold-upper">Software Engineer</span> - Microsoft Leap</p>
+                                    <p class="text">Designed and developed features such as user authentication and authorization,
+                                        profile creation and management, career aspiration, goals and interest, skill
+                                        assessment, mentorship and booking for a Youth Empowerment
+                                        Platform.</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <!-- text -->
-                        <div class="description">
-                            <p class="fs-5 mb-2"><span class="bold-upper">Computer Science Degree</span> - The University of Technology, Jamaica</p>
-                            <p class="text">Learned about algorithms, data structures, software engineering,
-                                and how computers work. I studied programming languages, databases,
-                                and how to design systems. I also worked on projects with
-                                classmates to solve problems and create new ideas in different
-                                areas.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                        <div class="row mb-4">
+                            <!-- lollipop icon -->
+                            <div class="col-2">
+                                <div class="experience-education-icon-container">
+                                    <i class="bi bi-mortarboard-fill white"></i>
+                                    <div class="vertical-bar vertical-bar-second"></div>
+                                </div>
+                            </div>
 
-                <div class="row">
-                    <!-- lollipop icon -->
-                    <div class="col-2">
-                        <div class="experience-education-icon-container">
-                            <i class="bi bi-mortarboard-fill white"></i>
-                            <div class="vertical-bar vertical-bar-bottom-right"></div>
-                        </div>
-                    </div>
+                            <!-- description -->
+                            <div class="col-10">
+                                <!-- tag -->
+                                <div class="tag mb-3">
+                                    <p class="fs-5">2018 - 2023</p>
+                                </div>
 
-                    <!-- description -->
-                    <div class="col-10">
-                        <!--tag -->
-                        <div class="tag mb-4">
-                            <p class="fs-5">2012 - 2013</p>
+                                <!-- text -->
+                                <div class="description">
+                                    <p class="fs-5 mb-2"><span class="bold-upper">Computer Science Degree</span> - The University of Technology, Jamaica</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="description">
-                            <p class="fs-5 mb-2"><span class="bold-upper">Diploma in Computer Studies</span> - University of the Commonwealth Caribbean</p>
-                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra, erat ac
-                                iaculis efficitur, libero elit vestibulum massa, sed lobortis massa leo eget ligula. Pellentesque pharetra, erat ac
-                                iaculis efficitur, libero elit vestibulum massa, sed lobortis massa leo eget ligula.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        <div class="row">
+                            <!-- lollipop icon -->
+                            <div class="col-2">
+                                <div class="experience-education-icon-container">
+                                    <i class="bi bi-mortarboard-fill white"></i>
+                                    <div class="vertical-bar vertical-bar-third"></div>
+                                </div>
+                            </div>
 
-        <!-- certificate -->
-        <div class="row certificate-section">
-            <!-- row one -->
-            <div class="row mb-5 gx-2 cerificate">
-                <!-- header -->
-                <h3>My <span>Certificates</span></h3>
+                            <!-- description -->
+                            <div class="col-10">
+                                <!--tag -->
+                                <div class="tag mb-3">
+                                    <p class="fs-5">2012 - 2013</p>
+                                </div>
 
-                <!-- first column -->
-                <div class="col">
-                    <div class="row">
-                        <div class="col-4 distributor">
-                            <p class="mb-0 distributor-name"><span>Microsoft</span></p>
-                        </div>
-
-                        <!-- description -->
-                        <div class="col-6 cert-description">
-                            <p class="mb-0 ms-3">Leap Apprenticeship Program</p>
-                            <p class="mb-0 ms-3">15 December 2023</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- second column -->
-                <div class="col">
-                    <div class="row">
-                        <div class="col-4 distributor">
-                            <p class="mb-0 distributor-name"><span>QualityWorks</span></p>
-                        </div>
-
-                        <!-- description -->
-                        <div class="col-6 cert-description">
-                            <p class="mb-0 ms-3">Agile Software Testing Bootcamp</p>
-                            <p class="mb-0 ms-3">27 September 2022</p>
+                                <div class="description">
+                                    <p class="fs-5 mb-2"><span class="bold-upper">Diploma in Computer Studies</span> - University of the Commonwealth Caribbean</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- row two -->
-            <div class="row mb-5 gx-2">
-                <!-- first column -->
-                <div class="col">
-                    <div class="row">
-                        <div class="col-4 distributor">
-                            <p class="mb-0 distributor-name"><span>QualityWorks</span></p>
-                        </div>
+            <div class="col gx-5">
+                <div class="row certificate-section">
+                    <!-- header -->
+                    <h3>My <span>Certificates</span></h3>
 
-                        <!-- description -->
-                        <div class="col-6 cert-description">
-                            <p class="mb-0 ms-3">UI Test Automation Bootcamp</p>
-                            <p class="mb-0 ms-3">28 December 2022</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- second column -->
-                <div class="col">
-                    <div class="row">
+                    <div class="row mb-5">
                         <div class="col-4 distributor">
                             <p class="mb-0 distributor-name"><span>Microsoft</span></p>
                         </div>
@@ -356,14 +319,8 @@
                             <p class="mb-0 ms-3">28 February 2023</p>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- row three -->
-            <div class="row mb-5 gx-2">
-                <!-- first column -->
-                <div class="col">
-                    <div class="row">
+                    <div class="row mb-5">
                         <div class="col-4 distributor">
                             <p class="mb-0 distributor-name"><span>Microsoft</span></p>
                         </div>
@@ -374,10 +331,7 @@
                             <p class="mb-0 ms-3">24 June 2023</p>
                         </div>
                     </div>
-                </div>
 
-                <!-- second column -->
-                <div class="col">
                     <div class="row">
                         <div class="col-4 distributor">
                             <p class="mb-0 distributor-name"><span>AWS</span></p>
@@ -389,40 +343,42 @@
                             <p class="mb-0 ms-3">11 April 2023</p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
+
     </div>
 
     <!-- footer -->
-    <footer class="footer mt-5">
+    <footer class="footer">
         <div class="container">
 
             <div class="row">
                 <!-- nav links -->
-                <div class="col-10 mt-5">
-                    <h3 class="name"><a href="/amg-designs/index.html">Abi Matthews-Gordon</a></h3>
+                <div class="col-10 mt-4">
+                    <h3 class="name"><a href="index.html">Abi Matthews-Gordon</a></h3>
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link ps-0" href="/amg-designs/index.html">Home</a>
+                            <a class="nav-link ps-0" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/amg-designs/about-me.html">About</a>
+                            <a class="nav-link" href="about-me.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/amg-designs/blog.home.html">Blog</a>
+                            <a class="nav-link" href="blog.home.html">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/amg-designs/portfolio-home.html">Portfolio</a>
+                            <a class="nav-link" href="portfolio-home.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/amg-designs/contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
 
-                <!-- proffessional links -->
-                <div class="col-2 mt-5 links">
+                <!-- professional links -->
+                <div class="col-2 mt-4 links">
                     <p>Get in touch</p>
                     <a href="#" class="professional-links"><i class="bi bi-linkedin"></i></a>
                     <a href="#" class="professional-links"><i class="bi bi-github"></i></a>
@@ -431,6 +387,46 @@
             <p class="text-center copyright mt-3 pt-3 pb-3">Copyright &copy; 2024. Designed and Built by Abi Matthews-Gordon</p>
         </div>
     </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content contact">
+
+                <div class="modal-header contact-intro">
+                    <h2 class="modal-title title" id="exampleModalLabel">Get in <span>touch</span></h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body contact-body">
+                    <p>If you're interested in working with me, collaborating
+                        on a project, or just want to say hi. I am always open
+                        to discussing new projects, creative ideas or
+                        opportunities and love meeting new people in the field.
+                    </p>
+                    <form action="" class="row g-3 contact-form">
+                        <div class="form-field">
+                            <input type="text" class="form-control form-input" placeholder="Your name">
+                        </div>
+
+                        <div class="form-field">
+                            <input type="text" class="form-control form-input" placeholder="Your email">
+                        </div>
+
+                        <!-- message -->
+                        <div>
+                            <textarea class="form-control form-message" placeholder="Your message" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer justify-content-start send">
+                    <a href="#" class="message-link"> Send message</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="scripts/site.js"></script>
