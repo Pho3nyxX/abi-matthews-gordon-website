@@ -7,7 +7,8 @@
 :root {
     --nav-dark-mode-color: #202124;
     --body-dark-mode-color: #292A2D;
-    --bronze-color: #DD7F24;
+    /* --bronze-color: #DD7F24; */
+    --bronze-color: #FC3A79;
     --dark-bronze-color: #BC5331;
     --home-page-menu-hover-color: #DD7F247b;
     --text-color: #292A2D;
@@ -24,7 +25,7 @@ body {}
 body.full-page {
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(255,255,255,1) 59%, rgba(233,232,234,1) 100%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 59%, rgba(233, 232, 234, 1) 100%);
 }
 
 body.full-page>.container-fluid,
@@ -34,8 +35,7 @@ body.full-page>.container-fluid>.row {
 
 
 /********** navbar *************/
-.main-nav {
-}
+.main-nav {}
 
 .main-nav ul li.nav-item a.nav-link {
     padding: 12px 40px;
@@ -78,11 +78,10 @@ body.full-page>.container-fluid>.row {
 
 /********** footer *************/
 .footer {
-    background-color: #fff;
-    color: #000;
     border-top: 1px solid #000;
 }
 
+/* 
 .footer .nav-link {
     color: #000;
 }
@@ -98,23 +97,34 @@ body.full-page>.container-fluid>.row {
 
 .footer h3 a {
     color: #000;
-}
+} */
 
 /* modal */
 
-.modal-header{
+.modal-header {
     padding: 20px 28px 8px 28px;
 }
 
-.modal-body{
+.modal-body {
     padding: 28px;
 }
+.modal-footer{
+    padding: 20px 28px;
+}
+
+/* breadcrumb */
+.breadcrumb-container .current-page{
+    font-size: 20px;
+    color: #000;
+}
+
 /* --------------------------------- */
 /*              Typography */
 /* --------------------------------- */
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 /*headings*/
@@ -142,7 +152,9 @@ h6.thin {
 
 /* links */
 .home-page .professional-links,
-.about-page .professional-links {
+.about-page .professional-links,
+.portfolio-page .project-links,
+.blog-page .professional-links {
     background-color: var(--bronze-color);
 }
 
@@ -165,11 +177,6 @@ i.white {
 /*           1. HOME PAGE */
 /* --------------------------------- */
 /* description */
-.home-page .description {
-    /* margin-top: 200px; */
-    
-}
-
 .home-page .description .intro {
     font-size: 58px;
     line-height: 1;
@@ -276,7 +283,7 @@ i.white {
     overflow: hidden;
 }
 
-.home-page .portfolio-section .portfolio-item .image-container img{
+.home-page .portfolio-section .portfolio-item .image-container img {
     max-width: 150%;
 }
 
@@ -357,14 +364,108 @@ i.white {
     width: 105px;
 }
 
-/* --------------------------------- */
-/*           1. ABOUT PAGE */
-/* --------------------------------- */
-.about-page .navbar{
-    margin-bottom: 150px;
+/* ***********profile when clicked section*********** */
+.portfolio-page .prev,
+.portfolio-page .next {
+    color: #000;
+    font-size: 40px;
+    position: absolute;
+    top: 380px;
 }
 
-.about-page .about-section .about .about-description h1{
+.portfolio-page .prev {
+    left: 150px;
+}
+
+.portfolio-page .next {
+    right: 150px;
+}
+
+.portfolio-page .current-image {
+    overflow: hidden;
+    max-height: 650px;
+}
+
+.portfolio-page .current-image img {
+    max-width: 150%;
+}
+
+.portfolio-page .portfolio-thumbnail .image-container {
+    display: inline-block;
+    height: 135px;
+    width: 135px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 40px;
+}
+
+.portfolio-page .portfolio-thumbnail .image-container img {
+    max-width: 135%;
+}
+
+.portfolio-page .portfolio-thumbnail .image-container:hover {
+    cursor: pointer;
+    border: 5px solid #0004;
+    box-sizing: border-box;
+}
+
+/* portfolio-description */
+.portfolio-page .portfolio-description {
+    margin-left: 50px;
+}
+
+.portfolio-page .portfolio-description h3 {
+    font-size: 37px;
+    color: var(--bronze-color);
+    margin-bottom: 20px;
+}
+
+.portfolio-page .portfolio-description .portfolio-text,
+.portfolio-page .portfolio-description .portfolio-text-bottom {
+    margin-bottom: 35px;
+    line-height: 1.78;
+}
+
+.portfolio-page .portfolio-description .portfolio-text-bottom {
+    margin-bottom: 35px;
+}
+
+.portfolio-page .portfolio-description .project-link-container {
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--bronze-color);
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.portfolio-page .portfolio-description .project-links,
+.blog-page .main-nav .socials .project-links {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    font-size: 23px;
+    margin-right: 20px;
+}
+
+.portfolio-page .portfolio-description .stack-item {
+    padding: 6px 20px;
+    margin-right: 25px;
+    display: inline-block;
+    border-radius: 6px;
+    background-color: var(--home-page-menu-hover-color);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* --------------------------------- */
+/*           2. ABOUT PAGE */
+/* --------------------------------- */
+
+
+/* .blog-page .blog-section .blog .blog-description h1  */
+.about-page .about-section .about .about-description h1 {
     font-size: 52px;
     margin-bottom: 10px;
 }
@@ -389,14 +490,17 @@ i.white {
 }
 
 
+/* .blog-page .blog-section .blog .blog-description span  */
 .about-page .about-section .about .about-description span {
     color: var(--bronze-color);
 }
 
+/* .blog-page .blog-section .blog .blog-description h2  */
 .about-page .about-section .about .about-description h5 {
     margin-bottom: 40px;
 }
 
+/* .blog-page .blog-section .blog .blog-description p  */
 .about-page .about-section .about .about-description p {
     line-height: 1.78;
 }
@@ -407,7 +511,7 @@ i.white {
     border-bottom: 1px solid var(--bronze-color);
 }
 
-.about-page .about-section .about .about-description .links .page-link.contact{
+.about-page .about-section .about .about-description .links .page-link.contact {
     margin-left: 110px;
 }
 
@@ -475,10 +579,6 @@ i.white {
     margin-bottom: 120px;
 }
 
-/* .about-page .about-section .experience-education {
-    margin-bottom: 120px;
-} */
-
 .about-page .about-section .experience-education h3>span {
     color: var(--bronze-color);
 }
@@ -538,12 +638,12 @@ i.white {
     line-height: 1.78;
 }
 
-.about-page .about-section .certificate-section h3{
+.about-page .about-section .certificate-section h3 {
     font-size: 37px;
     margin-bottom: 31px;
 }
 
-.about-page .about-section .certificate-section h3 span{
+.about-page .about-section .certificate-section h3 span {
     color: var(--bronze-color);
 
 }
@@ -571,45 +671,36 @@ i.white {
     padding-bottom: 40px;
 }
 
-/* contact */
-/* .about-page .about-section .contact{
-    margin-bottom: 120px;
-} */
-
-.about-page .contact .contact-intro .title {
+.contact .contact-intro .title {
     margin-bottom: 10px;
     line-height: 1;
     font-size: 37px;
 }
 
-.about-page .contact .contact-intro .title span {
+.contact .contact-intro .title span {
     color: var(--bronze-color);
 }
-
-.about-page .contact .contact-body p  {
+.contact .contact-boby p {
     margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.78;
 }
 
-.about-page .contact  .contact-form .form-field{
+.contact .contact-form .form-field {
     margin-bottom: 5px;
 }
 
-.about-page .contact .contact-form .form-field .form-input{
+.contact .contact-form .form-field .form-input {
     padding: 11px 20px;
     border-radius: 12px;
 }
 
-.about-page .contact .contact-form .form-message{
+.contact .contact-form .form-message {
     margin-bottom: 10px;
 }
 
-.about-page .contact .send{
-    padding: 15px;
-}
 
-.about-page .contact .message-link{
+.contact .message-link {
     display: inline-block;
     background-color: var(--bronze-color);
     border-radius: 38px;
@@ -623,4 +714,139 @@ i.white {
 
 .about-page .footer .links p {
     margin-left: 10px;
+}
+
+/* --------------------------------- */
+/*           3. BLOG PAGE */
+/* --------------------------------- */
+.blog-page .container{
+    max-width: 1650px;
+}
+.navbar {
+    margin-bottom: 120px;
+}
+
+.blog-page .main-nav .menus {
+    margin-right: 80px;
+}
+
+.blog-page .main-nav .menus .name {
+    margin-right: 100px;
+    color: var(--bronze-color);
+}
+
+.blog-page .main-nav ul li.nav-item a.nav-link {
+    padding: 12px 35px;
+}
+
+.blog-page .main-nav .search-bar {
+    margin-right: 150px;
+}
+
+.blog-page .main-nav .search-bar .search-input {
+    border-radius: 20px;
+    background-color: #eee;
+    padding-left: 30px;
+}
+
+.blog-page .main-nav .search-bar input[type="text"]:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0 0 4px 1px var(--bronze-color);
+}
+
+.blog-page .main-nav .socials .professional-links {
+    height: 35px;
+    width: 35px;
+    line-height: 33px;
+    margin-right: 25px;
+}
+.blog-page .main-nav .socials a i{
+    font-size: 20px;
+}
+
+.blog-page .blog-section .blog-card-image-container {
+    height: 230px;
+    background-color: #737373;
+    margin-bottom: 25px;
+}
+
+.blog-page .blog-section .content h3 {
+    margin-bottom: 27px;
+}
+
+.blog-page .blog-section .content h3 a {
+    color: var(--bronze-color);
+    font-size: 26px;
+}
+
+.blog-page .blog-section .content .author-date {
+}
+
+.blog-page .blog-section .content .author-date p {
+    font-size: 13px;
+    margin-bottom: 17px;
+}
+.blog-page .blog-section .blog-container {
+    height: 635px;
+    background-color: #F4F4F4;
+    padding: 27px;
+}
+.blog-page .blog-section .blog-container .content .summary {
+    margin-bottom: 26px;
+    line-height: 1.78;
+    max-height: 90px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.blog-page .blog-section .blog-container .content .blog-link {
+    background-color: #fff;
+    padding: 15px 50px;
+    border-radius: 4px;
+    text-align: center;
+    color: var(--bronze-color);
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.blog-page .blog-section .blog-container .content .blog-link:hover {
+    color: #000;
+    background-color: var(--bronze-color);
+}
+
+/* blog menu */
+.blog-page .blog-section .blog-menu {
+    height: 230px;
+    background-color: #d7d2d2;
+    margin-bottom: 20px;
+}
+
+.blog-page .blog-section .blog-container-section{
+    >.row{
+        gap:20px;    }
+}
+
+.blog-page .blog-section .blog-menu-container a {
+    display: block;
+    line-height: 1.78;
+}
+
+/* pagination */
+.blog-page .blog-section .pagination-container .pagination li a .icon {
+    font-size: 15px;
+    color: var(--bronze-color);
+}
+
+.blog-page .blog-section .pagination-container .pagination li a .icon:hover {
+    color: #fff;
+}
+
+.blog-page .blog-section .pagination-container .pagination li a {
+    color: #000;
+}
+
+.blog-page .blog-section .pagination-container .pagination li a:hover {
+    background-color: var(--bronze-color);
 }

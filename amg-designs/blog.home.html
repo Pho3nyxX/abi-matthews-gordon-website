@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/styles.css">
 
 </head>
@@ -18,217 +19,201 @@
 <body class="full-page blog-page">
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg main-nav ps-5 sticky-lg-top shadow ">
+    <nav class="navbar navbar-expand-lg main-nav ps-5 sticky-lg-top mt-2">
         <div class="container">
 
-            <!-- image -->
-            <!-- <div class="logo-round-container logo-photo">
-                <img src="images/Abi_NoB.png" alt="">
-            </div> -->
+            <div class="col-6 collapse navbar-collapse menus">
+                <img src="" alt="">
+                <a href="index.html" class="navbar-brand name">AMG</a>
 
-            <!-- my name -->
-            <a href="index.html" class="navbar-brand name">AMG</a>
-
-            <!-- hamburger menu -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="expand navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- nav links -->
-            <div class="collapse navbar-collapse justify-content-center" id="nav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="/amg-designs/index.html">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about-me.html">About</a>
+                        <a class="nav-link" href="/amg-designs/about-me.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.home.html">Blog</a>
+                        <a class="nav-link" href="/amg-designs/blog.home.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="portfolio-home.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal" href="/amg-designs/contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
 
-            <div class="moon">
-                <i class="bi bi-moon-fill"></i>
+            <div class="col-3 search-bar">
+                <input type="search" class="form-control search-input" placeholder="Search">
+            </div>
+
+            <div class="col-2 socials">
+                <a href="#" class="professional-links"><i class="bi bi-linkedin white"></i></a>
+                <a href="#" class="professional-links"><i class="bi bi-github white"></i></a>
             </div>
         </div>
     </nav>
 
+    <!-- breadcrumb -->
+    <div class="container breadcrumb-container" aria-label="breadcrumb">
+        <p>
+            <a href="index.html">Portfolio</a> / 
+            <span class="current-page">Blog</span>
+        </p>
+    </div>
+
     <!-- content -->
-    <div class="container">
-
-        <!-- blog header -->
-        <div class="row header">
-            <div class="col-7 blog-intro">
-                <h1 class="title">Blog</h1>
-
-                <!-- page title -->
-                <h2>My <span>Thoughts, Insights & Learnings</span></h2>
-
-                <!-- page description -->
-                <p>On my path toward becoming a Software Engineer and UI
-                    Designer, I have immersed myself in numerous blogs to
-                    expand my understanding of specific topics. This has
-                    fueled my desire to give back to this communities by
-                    creating blog posts. My aim is to support those who
-                    have taught me so much and assist others in thriving
-                    within these fields.</p>
-            </div>
-        </div>
+    <div class="container blog-section">
 
         <!-- cards -->
         <div class="row mb-5 gx-5">
 
-            <div class="col-4">
-                <div class="card-container">
-                    <!-- image -->
-                    <div class="blog-card-image-container">
+            <!-- menu -->
+            <div class="col-2 blog-menu-container">
+                <!-- image -->
+                <div class="blog-menu"></div>
 
-                    </div>
-
-                    <div class="content">
-                        <!-- title -->
-                        <h3>My Journey to the Microsoft apprenticeship - Part 1</h3>
-
-                        <!-- date & mins -->
-                        <div class="date-mins">
-                            <i class="bi bi-calendar3"></i>
-                            <p>Jan. 1, 2024</p>
-
-                            <i class="bi bi-clock"></i>
-                            <p>5 minutes read</p>
-                        </div>
-
-                        <!-- brief summary -->
-                        <p class="summary">Yet, as I submitted the form, reality set in. Enrolling in the Leap program
-                            meant relinquishing the chance to complete my studies for a free certification
-                            earned from a competition.</p>
-
-                        <!-- link -->
-                            <a href="blog-description.html" class="blog-link">Read More</a>
-                    </div>
-                </div>
+                <h5><a href="blog-description.html">Heading Title Title</a></h5>
+                <a href="blog-description.html">Title Title</a>
+                <a href="blog-description.html">Title Title</a>
+                <a href="blog-description.html">Title Title</a>
+                <a href="blog-description.html">Title Title</a>
+                <a href="blog-description.html">Title Title</a>
             </div>
 
-            <div class="col-4">
-                <div class="card-container">
-                    <!-- image -->
-                    <div class="blog-card-image-container">
+            <!-- blog -->
+            <div class="col-10 blog-container-section">
+                <div class="row g-3">
+                    <div class="col blog-container">
+                        <!-- image -->
+                        <div class="blog-card-image-container"></div>
 
+                        <div class="content">
+                            <!-- title -->
+                            <h3><a href="blog-description.html">My Journey to the Microsoft apprenticeship - Part 1</a></h3>
+
+                            <!-- date & mins -->
+                            <div class="author-date">
+                                <p>Jan. 1, 2024 &nbsp; &nbsp; by Abi Matthews-Gordon</p>
+                            </div>
+
+                            <!-- brief summary -->
+                            <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. </p>
+
+                            <!-- link -->
+                            <a href="blog-description.html" class="blog-link">Read more</a>
+                        </div>
                     </div>
 
-                    <div class="content">
-                        <!-- title -->
-                        <h3>My Journey to the Microsoft apprenticeship - Part 1</h3>
+                    <div class="col blog-container">
+                        <!-- image -->
+                        <div class="blog-card-image-container"></div>
 
-                        <!-- date & mins -->
-                        <div class="date-mins">
-                            <i class="bi bi-calendar3"></i>
-                            <p>Jan. 1, 2024</p>
+                        <div class="content">
+                            <!-- title -->
+                            <h3><a href="blog-description.html">My Journey to the Microsoft apprenticeship - Part 1</a></h3>
 
-                            <i class="bi bi-clock"></i>
-                            <p>5 minutes read</p>
+                            <!-- date & mins -->
+                            <div class="author-date">
+                                <p>Jan. 1, 2024 &nbsp; &nbsp; by Abi Matthews-Gordon</p>
+                            </div>
+
+                            <!-- brief summary -->
+                            <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. </p>
+
+                            <!-- link -->
+                            <a href="blog-description.html" class="blog-link">Read more</a>
                         </div>
+                    </div>
 
-                        <!-- brief summary -->
-                        <p class="summary">Yet, as I submitted the form, reality set in. Enrolling in the Leap program
-                            meant relinquishing the chance to complete my studies for a free certification
-                            earned from a competition.</p>
+                    <div class="col blog-container">
+                        <!-- image -->
+                        <div class="blog-card-image-container"></div>
 
-                        <!-- link -->
-                            <a href="blog-description.html" class="blog-link">Read More</a>
+                        <div class="content">
+                            <!-- title -->
+                            <h3><a href="blog-description.html">My Journey to the Microsoft apprenticeship - Part 1</a></h3>
+
+                            <!-- date & mins -->
+                            <div class="author-date">
+                                <p>Jan. 1, 2024 &nbsp; &nbsp; by Abi Matthews-Gordon</p>
+                            </div>
+
+                            <!-- brief summary -->
+                            <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. </p>
+
+                            <!-- link -->
+                            <a href="blog-description.html" class="blog-link">Read more</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-4">
-                <div class="card-container">
-                    <!-- image -->
-                    <div class="blog-card-image-container">
-
-                    </div>
-
-                    <div class="content">
-                        <!-- title -->
-                        <h3>My Journey to the Microsoft apprenticeship - Part 1</h3>
-
-                        <!-- date & mins -->
-                        <div class="date-mins">
-                            <i class="bi bi-calendar3"></i>
-                            <p>Jan. 1, 2024</p>
-
-                            <i class="bi bi-clock"></i>
-                            <p>5 minutes read</p>
-                        </div>
-
-                        <!-- brief summary -->
-                        <p class="summary">Yet, as I submitted the form, reality set in. Enrolling in the Leap program
-                            meant relinquishing the chance to complete my studies for a free certification
-                            earned from a competition.</p>
-
-                        <!-- link -->
-                            <a href="blog-description.html" class="blog-link">Read More</a>
-                    </div>
-                </div>
+                <!-- pagination -->
+                <nav class="pagination-container mt-5">
+                    <ul class="pagination">
+                        <li><a href="" class="page-link"><i class="bi bi-chevron-left icon"></i></a></li>
+                        <li><a href="" class="page-link">1</a></li>
+                        <li><a href="" class="page-link">2</a></li>
+                        <li><a href="" class="page-link">3</a></li>
+                        <li><a href="" class="page-link"><i class="bi bi-chevron-right icon"></i></a></li>
+                    </ul>
+                </nav>
             </div>
 
         </div>
-
-        <!-- pagination -->
-        <nav class="pagination-container">
-            <ul class="pagination">
-                <li class="page-item"><a href="" class="page-link"><i class="bi bi-chevron-left"></i></a></li>
-                <li class="page-item"><a href="" class="page-link">1</a></li>
-                <li class="page-item"><a href="" class="page-link">2</a></li>
-                <li class="page-item"><a href="" class="page-link">3</a></li>
-                <li class="page-item"><a href="" class="page-link"><i class="bi bi-chevron-right"></i></a></li>
-            </ul>
-        </nav>
 
     </div>
 
     <!-- footer -->
-    <footer class="footer mt-5">
+    <footer class="footer">
         <div class="container">
-            <div class="row">
-                <!-- nav links -->
-                <div class="col-10 mt-4">
-                    <h3 class="name"><a href="index.html">Abi Matthews-Gordon</a></h3>
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link ps-0" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about-me.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.home.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio-home.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-2 mt-4 links">
-                    <p>Get in touch</p>
-                    <a href="#" class="professional-links"><i class="bi bi-linkedin white"></i></a>
-                    <a href="#" class="professional-links"><i class="bi bi-github white"></i></a>
-                </div>
-            </div>
             <p class="text-center copyright mt-3 pt-3 pb-3">Copyright &copy; 2024. Designed and Built by Abi Matthews-Gordon</p>
         </div>
     </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content contact">
+
+                <div class="modal-header contact-intro">
+                    <h2 class="modal-title title" id="exampleModalLabel">Get in <span>touch</span></h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body contact-body">
+                    <p>If you're interested in working with me, collaborating
+                        on a project, or just want to say hi. I am always open
+                        to discussing new projects, creative ideas or
+                        opportunities and love meeting new people in the field.
+                    </p>
+                    <form action="" class="row g-3 contact-form">
+                        <div class="form-field">
+                            <input type="text" class="form-control form-input" placeholder="Your name">
+                        </div>
+
+                        <div class="form-field">
+                            <input type="text" class="form-control form-input" placeholder="Your email">
+                        </div>
+
+                        <!-- message -->
+                        <div>
+                            <textarea class="form-control form-message" placeholder="Your message" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer justify-content-start">
+                    <a href="#" class="message-link"> Send message</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="scripts/site.js"></script>
