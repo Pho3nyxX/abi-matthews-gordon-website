@@ -8,102 +8,120 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="full-page portfolio-page">
 
-    <!-- breadcrumb -->
-    <div class="container breadcrumb-container" aria-label="breadcrumb">
-        <p>
-            <a href="index.html">Portfolio</a> / 
-            <span class="current-page">Level Up</span>
-        </p>
-    </div>
-
     <!-- content -->
     <div class="row">
         <div class="col">
+            <img src="images/left-arrow-backup-2-svgrepo-com.svg" alt="Left Arrow" class="prev">
 
-            <i class="bi bi-chevron-left prev"></i>
+            <div class="row align-items-center justify-content-center main-project">
+                <div class="col-3 mt-5 portfolio-description">
+                    <!-- breadcrumb -->
+                    <div class="container ps-0 breadcrumb-container" aria-label="breadcrumb">
+                        <div>
+                            <a href="index.html">AMG/</a>
+                            <span>Level Up</span>
+                        </div>
 
-            <div class="row align-items-center justify-content-center mb-5">
+                        <div class="speaker">
+                            <i class="bi bi-volume-up-fill"></i>
+                        </div>
+                    </div>
 
+                    <!-- links -->
+                    <div class="links">
+                        <a href="about-me.html" class="page-link about">About Me</a>
+                        <a href="blog.home.html" class="page-link blog">Blog</a>
+
+                        <a href="#" ><i class="bi bi-linkedin green"></i></a>
+                        <a href="#"><i class="bi bi-github green"></i></a>
+                    </div>
+
+                    <h3>Level Up</h3>
+
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur</p>
+
+                    <p class="summary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem asperiores
+                        inventore repellendus labore laborum voluptatibus amet omnis, tempora ipsa
+                        voluptas. Voluptatem praesentium aliquid blanditiis a magnam molestiae deleniti.</p>
+
+                    <div class="project-link-container">
+                        <a href="#" class="project-links"><i class="bi bi-arrow-up-right-circle-fill white"></i></a>
+                        <a href="#" class="project-links"><i class="bi bi-github white"></i></a>
+                        <a href="" class="read-more mt-3">Read more</a>
+                    </div>
+
+                    <p class="tools">Built with</p>
+
+                    <!-- tags -->
+                    <div class="stack-item">
+                        <li><img src="images/asp-svgrepo-com.svg" alt="asp-icon"></li>
+                        <li><img src="images/csharp-svgrepo-com.svg" alt="node-icon"></li>
+                        <li><img src="images/javascript-svgrepo-com.svg" class="img-decrease" alt="javascript-icon"></li>
+                        <li><img src="images/bootstrap-svgrepo-com.svg" class="img-decrease" alt="bootstrap-icon"></li>
+                    </div>
+                </div>
+
+                <!-- image -->
                 <div class="col-5 current-image">
                     <img src="images/pic1.jpg" alt="">
                 </div>
-
-                <!-- description -->
-                <div class="col-3 portfolio-description">
-                    <h3>Level Up</h3>
-                    <p class="portfolio-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem asperiores
-                        inventore repellendus labore laborum voluptatibus amet omnis, tempora ipsa
-                        voluptas. Voluptatem praesentium aliquid blanditiis a magnam molestiae deleniti
-                        quasi. Earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-
-                    <p class="portfolio-text-bottom">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem asperiores
-                        inventore repellendus labore laborum voluptatibus amet omnis, tempora ipsa
-                        voluptas. Voluptatem praesentium aliquid blanditiis a magnam molestiae deleniti
-                        quasi. Earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-
-                    <div class="project-link-container">
-                        <a href="#" class="project-links"><i class="bi bi-arrow-up-right-circle-fill white"></i></i></i></a>
-                        <a href="#" class="project-links"><i class="bi bi-github white"></i></a>
-                    </div>
-
-                    <!-- tags -->
-                    <div>
-                        <span class="stack-item mb-3">ASP.Net MVC</span>
-                        <span class="stack-item mb-3">C#</span>
-                        <span class="stack-item mb-3">JavaScript</span>
-                        <span class="stack-item mb-3">Bootstrap</span>
-                    </div>
-                </div>
-
             </div>
 
-            <i class="bi bi-chevron-right next"></i>
+            <img src="images/right-arrow-backup-2-svgrepo-com.svg" alt="Right Arrow" class="next">
 
             <!-- thumbnail -->
-            <div class="row align-items-center justify-content-evenly thumbnail-filter">
-                <div class="col-8 portfolio-thumbnail">
-
-                    <div class="image-container">
-                        <img src="images/pic2.png" alt="">
+            <div class="row align-items-center justify-content-evenly thumbnail-section">
+                <div class="col-8 portfolio-thumbnails-container">
+                    <div class="portfolio-thumbnail current-display">
+                        <div class="image-container">
+                            <img src="images/pic2.png" alt="">
+                        </div>
                     </div>
 
-                    <div class="image-container">
-                        <img src="images/pic3.png" alt="">
+                    <div class="portfolio-thumbnail ">
+                        <div class="image-container">
+                            <img src="images/pic3.png" alt="">
+                        </div>
                     </div>
 
-                    <div class="image-container">
-                        <img src="images/pic4.png" alt="">
+                    <div class="portfolio-thumbnail">
+                        <div class="image-container">
+                            <img src="images/pic4.png" alt="">
+                        </div>
                     </div>
 
-                    <div class="image-container">
-                        <img src="images/pic5.jpg" alt="">
+                    <div class="portfolio-thumbnail">
+                        <div class="image-container">
+                            <img src="images/pic5.jpg" alt="">
+                        </div>
                     </div>
 
-                    <div class="image-container">
-                        <img src="images/pic6.png" alt="">
+                    <div class="portfolio-thumbnail">
+                        <div class="image-container">
+                            <img src="images/pic6.png" alt="">
+                        </div>
                     </div>
 
-                    <div class="image-container">
-                        <img src="images/pic7.jpg" alt="">
+                    <div class="portfolio-thumbnail">
+                        <div class="image-container">
+                            <img src="images/pic7.jpg" alt="">
+                        </div>
                     </div>
 
-                    <div class="image-container">
-                        <img src="images/pic8.png" alt="">
+                    <div class="portfolio-thumbnail">
+                        <div class="image-container">
+                            <img src="images/pic8.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
@@ -118,9 +136,9 @@
             // set an event listener to run when there's a click inside the div
             portfolioItemContainer.addEventListener("click", (e) => {
                 const tagName = "img";
-                
+
                 // check if the image clicked is the the img
-                if(e.target.tagName.toLowerCase() == tagName.toLowerCase()){
+                if (e.target.tagName.toLowerCase() == tagName.toLowerCase()) {
                     // console.log(e.target.src);
 
                     // take the scr from the img clicked & put it on the main img
@@ -128,9 +146,7 @@
                 }
             });
         });
-
     </script>
-
 
 </body>
 

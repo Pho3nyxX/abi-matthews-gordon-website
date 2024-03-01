@@ -8,25 +8,27 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="full-page home-page">
-
     <div class="container-fluid">
 
         <div class="row align-items-center justify-content-center">
-            <!-- description -->
             <div class="col-4 description">
-                <div class="name-title">
+                <div class="speaker">
+                    <i class="bi bi-volume-up-fill"></i>
+                </div>
+
+                <!-- intro -->
+                <div>
                     <h1 class="intro"><span>Hello, I am </span>Abi Matthews-Gordon</h1>
                     <h2 class="title thin">Software Engineer</h2>
                 </div>
-                <p class="description-para">
+
+                <!-- details -->
+                <p>
                     I have a love for creating, design and test automation. I am committed to
                     using my skills and time to make valuable contributions to innovative
                     software projects aimed at improving the lives of others and I am always
@@ -35,12 +37,11 @@
 
                 <!-- links -->
                 <div class="links">
-                    <i class="bi bi-volume-up-fill speaker"></i>
-                    <a href="about-me.html" class="page-link">About Me</a> |
-                    <a href="blog.home.html" class="page-link">Blog</a> |
+                    <a href="about-me.html" class="page-link about">About Me</a>
+                    <a href="blog.home.html" class="page-link blog">Blog</a>
 
-                    <a href="#" class="professional-links linkedin"><i class="bi bi-linkedin white"></i></a>
-                    <a href="#" class="professional-links"><i class="bi bi-github white"></i></a>
+                    <a href="#" class="prof"><i class="bi bi-linkedin green"></i></a>
+                    <a href="#" class="prof"><i class="bi bi-github green"></i></a>
                 </div>
             </div>
 
@@ -52,7 +53,7 @@
                             <img src="images/pic1.jpg" alt="">
                         </a>
                     </div>
-                    <div class="title">This title</div>
+                    <div class="title text-center">Microstar <br> Intranet</div>
                 </div>
 
                 <div class="portfolio-item second">
@@ -61,18 +62,21 @@
                     </div>
                     <div class="title">This title</div>
                 </div>
+
                 <div class="portfolio-item third">
                     <div class="image-container">
                         <img src="images/pic3.png" alt="">
                     </div>
                     <div class="title">This title</div>
                 </div>
+
                 <div class="portfolio-item fourth">
                     <div class="image-container">
                         <img src="images/pic4.png" alt="">
                     </div>
                     <div class="title">This title</div>
                 </div>
+
                 <div class="portfolio-item fifth">
                     <div class="image-container">
                         <img src="images/pic5.jpg" alt="">
@@ -81,9 +85,7 @@
                 </div>
             </div>
         </div>
-
     </div>
-
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="../node_modules\gsap\dist/all.js"></script>
