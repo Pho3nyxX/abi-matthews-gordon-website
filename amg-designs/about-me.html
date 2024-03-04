@@ -14,259 +14,247 @@
 <body class="full-page about-page">
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg main-nav ps-5 sticky-lg-top shadow ">
-        <div class="container">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg main-nav mt-2">
+            <div class="collapse navbar-collapse menus">
+                <div>
+                    <img src="" alt="">
+                    <a href="index.html" class="navbar-brand name">AMG</a>
+                </div>
 
-            <!-- image -->
-            <!-- <div class="logo-round-container logo-photo">
-                <img src="images/Abi_NoB.png" alt="">
-            </div> -->
+                <div class="links mb-0">
+                    <a href="index.html" class="page-link about">Work</a>
+                    <a href="about-me.html" class="page-link about">About Me</a>
+                    <a href="blog.home.html" class="page-link blog">Blog</a>
+                    <a href="" class="page-link blog">Contact</a>
 
-            <a href="index.html" class="navbar-brand name">AMG</a>
-
-            <div class="collapse navbar-collapse justify-content-center" id="nav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about-me.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.home.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal" href="/amg-designs/contact.html">Contact</a>
-                    </li>
-                </ul>
+                    <a href="#"><i class="bi bi-linkedin green"></i></a>
+                    <a href="#"><i class="bi bi-github green"></i></a>
+                </div>
             </div>
-
-            <div class="moon">
-                <i class="bi bi-moon-fill"></i>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
     <!-- content -->
     <div class="container about-section">
 
-        <!-- about -->
-        <div class="row about">
-            <div class="col-5 about-description">
-                <h1>About Me</h1>
-                <h5 class="thin">Building stuff brings me joy.</h5>
+        <div class="row">
 
-                <p>I am a Software Engineer and UI Designer from Jamaica with a bachelor's
-                    degree in Computer Science. I have always found fascination in technology
-                    and its impact on the lives of individuals. My goal is to develop secure,
-                    imapactful, groundbreaking applications that will enrich and enhance lives.
-                </p>
+            <div class="col-10">
+                <div class="row about">
+                    <div class="col-7 details">
+                        <h1>About Me</h1>
+                        <h5 class="thin">Building stuff brings me joy.</h5>
 
-                <p>Lately, I have been nurturing a passion for UI Design paying keen attention
-                    to learning and applying design principles, trends, and best practices such
-                    as accessibility.
-                </p>
+                        <p>I am a Software Engineer and UI Designer from Jamaica with a bachelor's
+                            degree in Computer Science. I have always found fascination in technology
+                            and its impact on the lives of individuals. My goal is to develop secure,
+                            imapactful, groundbreaking applications that will enrich and enhance lives.
+                        </p>
 
-                <p class="about-para">I am seeking job opportunities where I can contribute,
-                    expand my knowledge, and continue to grow. If you have an opportunity that
-                    aligns with my skills, interests and experience, I would love to explore it
-                    further. Feel free to reach out.
-                </p>
+                        <p>Lately, I have been nurturing a passion for UI Design paying keen attention
+                            to learning and applying design principles, trends, and best practices such
+                            as accessibility.
+                        </p>
 
-                <!-- links -->
-                <div class="links">
-                    <a href="contact.html" class="page-link contact" data-bs-toggle="modal" data-bs-target="#contactModal"> Get in touch </a> |
-                    <a href="#" class="professional-links linkedin"><i class="bi bi-linkedin white"></i></a>
-                    <a href="#" class="professional-links"><i class="bi bi-github white"></i></a>
-                </div>
-            </div>
-
-            <div class="col-5 about-img-container">
-                <div class="img-about">
-                    <img src="images/Abi_NoB.png" alt="">
-                </div>
-            </div>
-        </div>
-
-        <!-- skills -->
-        <div class="row skill-sec">
-            <h3>My Skills</h3>
-            <h5 class="thin">Some technologies and tools i have <span>worked with</span>.</h5>
-
-            <!-- categories -->
-            <div class="row ">
-
-                <!-- frontend -->
-                <div class="col-3 skills">
-                    <h4 class="skill-heading">
-                        <img src="images/computer-svgrepo-com.svg" alt="computer" class="skill-img">
-                        Frontend
-                    </h4>
-
-                    <ul class="skill-lists">
-                        <li><img src="images/css-3-svgrepo-com.svg" alt="css-icon">CSS3</li>
-                        <li><img src="images/html-5-svgrepo-com.svg" alt="html-icon">HTML5</li>
-                        <li><img src="images/javascript-svgrepo-com.svg" class="img-decrease" alt="javascript-icon">JavaScript</li>
-                        <li><img src="images/bootstrap-svgrepo-com.svg" class="img-decrease" alt="bootstrap-icon">Bootstrap</li>
-                        <li><img src="images/bootstrap-svgrepo-com.svg" alt="bootstrap-icon">UI Design</li>
-                    </ul>
-                </div>
-
-                <!-- backend -->
-                <div class="col-3 skills">
-                    <h4 class="skill-heading">
-                        <img src="images/server-svgrepo-com.svg" alt="server" class="skill-img">
-                        Backend
-                    </h4>
-
-                    <ul class="skill-lists">
-                        <li><img src="images/csharp-svgrepo-com.svg" alt="node-icon">C#</li>
-                        <li><img src="images/nodejs-svgrepo-com.svg" class="img-increase" alt="node-icon">Node JS</li>
-                        <li><img src="images/java-svgrepo-com.svg" class="img-increase" alt="node-icon">Java</li>
-                        <li><img src="images/asp-svgrepo-com.svg" alt="asp-icon">ASP .Net MVC</li>
-                        <li><img src="images/database-svgrepo-com.svg" alt="database-design-icon">Database Design</li>
-                    </ul>
-                </div>
-
-                <!-- testing -->
-                <div class="col-3 skills">
-                    <h4 class="skill-heading">
-                        <img src="images/tools-svgrepo-com.svg" alt="tools" class="skill-img">
-                        Testing
-                    </h4>
-
-                    <ul class="skill-lists">
-                        <li><img src="images/git-svgrepo-com.svg" alt="git-icon">WebDriver</li>
-                        <li><img src="images/cypress.png" alt="figma-icon">Cypress</li>
-                        <li><img src="images/mysql-logo-svgrepo-com.svg" alt="mysql-icon">Regression Testing</li>
-                        <li><img src="images/visual-studio-svgrepo-com.svg" alt="vscode-icon">Test Automation</li>
-                    </ul>
-                </div>
-
-                <!-- tools -->
-                <div class="col-3 skills">
-                    <h4 class="skill-heading">
-                        <img src="images/tools-svgrepo-com.svg" alt="tools" class="skill-img">
-                        Tools
-                    </h4>
-
-                    <ul class="skill-lists">
-                        <li><img src="images/github-color-svgrepo-com.svg" alt="git-icon">Github</li>
-                        <li><img src="images/figma-svgrepo-com.svg" alt="figma-icon">Figma</li>
-                        <li><img src="images/mysql-logo-svgrepo-com.svg" class="img-increase-xl" alt="mysql-icon">MySQL</li>
-                        <li><img src="images/visual-studio-svgrepo-com.svg" class="img-decrease" alt="vscode-icon">Visual Studio</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- experience, education & certificate -->
-        <div class="row education-cert-sec">
-            <div class="col gx-5">
-                <div class="row experience-education">
-                    <h3>My Experience & Education</h3>
-                    <div class="col">
-                        <div class="row mb-4">
-                            <!-- lollipop icon -->
-                            <div class="col-2 timeline-legend">
-                                <div class="experience-education-icon-container">
-                                    <i class="bi bi-briefcase-fill white"></i>
-                                    <div class="vertical-bar vertical-bar-first"></div>
-                                </div>
-                            </div>
-
-                            <!-- description -->
-                            <div class="col-10">
-                                <div class="">
-                                    <p class="date">2023</p>
-                                </div>
-
-                                <div class="description">
-                                    <p class="fs-5 mb-2"><span class="bold-upper">Software Engineer</span> - Microsoft Leap</p>
-                                    <p class="text">Designed and developed features such as user authentication and authorization,
-                                        profile creation and management, career aspiration, goals and interest, skill
-                                        assessment, mentorship and booking for a Youth Empowerment
-                                        Platform.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mb-4">
-                            <!-- lollipop icon -->
-                            <div class="col-2 timeline-legend">
-                                <div class="experience-education-icon-container">
-                                    <i class="bi bi-mortarboard-fill white"></i>
-                                    <div class="vertical-bar vertical-bar-second"></div>
-                                </div>
-                            </div>
-
-                            <!-- description -->
-                            <div class="col-10">
-                                <div class="">
-                                    <p class="date">2018 - 2023</p>
-                                </div>
-
-                                <div class="description">
-                                    <p class="fs-5 mb-2"><span class="bold-upper">Computer Science Degree</span> - The University of Technology, Jamaica</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <!-- lollipop icon -->
-                            <div class="col-2 timeline-legend">
-                                <div class="experience-education-icon-container">
-                                    <i class="bi bi-mortarboard-fill white"></i>
-                                    <div class="vertical-bar vertical-bar-third"></div>
-                                </div>
-                            </div>
-
-                            <!-- description -->
-                            <div class="col-10">
-                                <div class="">
-                                    <p class="date">2012 - 2013</p>
-                                </div>
-
-                                <div class="description">
-                                    <p class="fs-5 mb-2"><span class="bold-upper">Diploma in Computer Studies</span> - University of the Commonwealth Caribbean</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col gx-5">
-                <div class="row contact-container g-3">
-                    <h2>Get in touch</h2>
-
-                    <div class="text">
-                        <p>If you're interested in working with me, collaborating
-                            on a project, or just want to say hi. I am always open
-                            to discussing new projects, creative ideas or
-                            opportunities and love meeting new people in the field.
+                        <p>I am seeking job opportunities where I can contribute,
+                            expand my knowledge, and continue to grow. If you have an opportunity that
+                            aligns with my skills, interests and experience, I would love to explore it
+                            further. Feel free to reach out.
                         </p>
                     </div>
 
-                    <form action="" class="row g-3 mt-0">
-                        <div class="form-field">
-                            <input type="text" class="form-control form-input" placeholder="Your name">
+                    <div class="col-5 image-section">
+                        <div class="image-container">
+                            <img src="images/Abi_NoB.png" alt="">
                         </div>
-
-                        <div class="form-field">
-                            <input type="text" class="form-control form-input" placeholder="Your email">
-                        </div>
-
-                        <div>
-                            <textarea class="form-control form-message" placeholder="Your message" rows="3"></textarea>
-                        </div>
-                    </form>
-
-                    <div class="mt-4">
-                        <a href="#" class="page-link"> Send message</a>
                     </div>
                 </div>
+
+                <div class="row journey">
+                    <div class="col-5 gx-5">
+                        <h3>My Experience & Education</h3>
+
+                        <div class="col">
+                            <div class="row mb-4">
+                                <div class="col-2 timeline-legend">
+                                    <div class="icon-container">
+                                        <i class="bi bi-briefcase-fill white"></i>
+                                        <div class="vertical-bar vertical-bar-first"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-10">
+                                    <div>
+                                        <p class="date">2023</p>
+                                    </div>
+
+                                    <div class="description">
+                                        <p class="fs-5 mb-2"><span class="bold-upper">Software Engineer</span> - Microsoft Leap</p>
+                                        <p class="text">Designed and developed features such as user authentication and authorization,
+                                            profile creation and management, career aspiration, goals and interest, skill
+                                            assessment, mentorship and booking for a Youth Empowerment
+                                            Platform.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-4">
+                                <!-- lollipop icon -->
+                                <div class="col-2 timeline-legend">
+                                    <div class="icon-container">
+                                        <i class="bi bi-mortarboard-fill white"></i>
+                                        <div class="vertical-bar vertical-bar-second"></div>
+                                    </div>
+                                </div>
+
+                                <!-- description -->
+                                <div class="col-10">
+                                    <div>
+                                        <p class="date">2018 - 2023</p>
+                                    </div>
+
+                                    <div class="description">
+                                        <p class="fs-5 mb-2"><span class="bold-upper">Computer Science Degree</span> - The University of Technology, Jamaica</p>
+                                        <p class="text">Report directly to the General Manager of the branch Receive calls.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <!-- lollipop icon -->
+                                <div class="col-2 timeline-legend">
+                                    <div class="icon-container">
+                                        <i class="bi bi-mortarboard-fill white"></i>
+                                        <div class="vertical-bar vertical-bar-third"></div>
+                                    </div>
+                                </div>
+
+                                <!-- description -->
+                                <div class="col-10">
+                                    <div class="">
+                                        <p class="date">2012 - 2013</p>
+                                    </div>
+
+                                    <div class="description">
+                                        <p class="fs-5 mb-2"><span class="bold-upper">Diploma in Computer Studies</span> - University of the Commonwealth Caribbean</p>
+                                        <p class="text">Report directly to the General Manager of the branch Receive calls.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 gx-5">
+                        <div class="contact-container">
+                            <h2>Get in touch</h2>
+
+                            <div class="text">
+                                <p>If you're interested in working with me, collaborating
+                                    on a project, or just want to say hi. I am always open
+                                    to discussing new projects, creative ideas or
+                                    opportunities and love meeting new people in the field.
+                                </p>
+                            </div>
+
+                            <form action="" class="row g-4 mt-0">
+                                <div class="form-field">
+                                    <input type="text" class="form-control" placeholder="Your name">
+                                </div>
+
+                                <div class="form-field">
+                                    <input type="text" class="form-control" placeholder="Your email">
+                                </div>
+
+                                <div>
+                                    <textarea class="form-control form-message" placeholder="Your message" rows="3"></textarea>
+                                </div>
+                            </form>
+
+                            <a href="#" class="send text-end offset-sm-8"> Send message</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- skill section -->
+            <div class="col-2 skills-container">
+                <h3>My Skills</h3>
+
+                <!-- frontend -->
+                <div class="row justify-content-between mb-5">
+                    <div class="title justify-content-center">
+                        <img src="images/computer-svgrepo-com.svg" alt="computer" class="section-img">
+                        <h4>Frontend</h4>
+                    </div>
+
+                    <div class="col-5 lists">
+                        <li><img src="images/css-3-svgrepo-com.svg" alt="css-icon">CSS3</li>
+                        <li><img src="images/html-5-svgrepo-com.svg" alt="html-icon">HTML5</li>
+                        <li><img src="images/javascript-svgrepo-com.svg" class="img-decrease" alt="javascript-icon">JavaScript</li>
+                    </div>
+
+                    <div class="col-5 lists">
+                        <li><img src="images/bootstrap-svgrepo-com.svg" class="img-decrease" alt="bootstrap-icon">Bootstrap</li>
+                        <li><img src="images/bootstrap-svgrepo-com.svg" alt="bootstrap-icon">UI Design</li>
+                    </div>
+                </div>
+
+                <!-- backend -->
+                <div class="row justify-content-between mb-5">
+                    <div class="title justify-content-center">
+                        <img src="images/server-svgrepo-com.svg" alt="server" class="section-img">
+                       <h4>Backend</h4> 
+                    </div>
+
+                    <div class="col-5 lists">
+                        <li><img src="images/csharp-svgrepo-com.svg" alt="node-icon">C#</li>
+                        <li><img src="images/nodejs-svgrepo-com.svg" class="img-increase" alt="node-icon">Node JS</li>
+                        <li><img src="images/java-svgrepo-com.svg" class="img-increase" alt="node-icon">Java</li>
+                    </div>
+
+                    <div class="col-5 lists">
+                        <li><img src="images/asp-svgrepo-com.svg" alt="asp-icon">ASP .Net MVC</li>
+                        <li><img src="images/database-svgrepo-com.svg" alt="database-design-icon">Database Design</li>
+                    </div>
+                </div>
+
+                <!-- testing -->
+                <div class="row justify-content-between mb-5">
+                    <div class="title justify-content-center">
+                        <img src="images/tools-svgrepo-com.svg" alt="tools" class="section-img">
+                        <h4>Testing</h4>
+                    </div>
+        
+                    <div class="col-5 lists">
+                        <li><img src="images/git-svgrepo-com.svg" alt="git-icon">WebDriver</li>
+                        <li><img src="images/cypress.png" alt="figma-icon">Cypress</li>
+                    </div>
+
+                    <div class="col-5 lists">
+                        <li><img src="images/mysql-logo-svgrepo-com.svg" alt="mysql-icon">Regression Testing</li>
+                        <li><img src="images/visual-studio-svgrepo-com.svg" alt="vscode-icon">Test Automation</li>
+                    </div>
+                </div> 
+
+                <!-- tools -->
+                <div class="row justify-content-between mb-5">
+                    <div class="title justify-content-center">
+                        <img src="images/tools-svgrepo-com.svg" alt="tools" class="section-img">
+                        <h4>Tools</h4>
+                    </div>
+        
+                    <div class="col-5 lists">
+                        <li><img src="images/github-color-svgrepo-com.svg" alt="git-icon">Github</li>
+                        <li><img src="images/figma-svgrepo-com.svg" alt="figma-icon">Figma</li>
+                    </div>
+
+                    <div class="col-5 lists">
+                        <li><img src="images/mysql-logo-svgrepo-com.svg" class="img-increase-xl" alt="mysql-icon">MySQL</li>
+                        <li><img src="images/visual-studio-svgrepo-com.svg" class="img-decrease" alt="vscode-icon">Visual Studio</li>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -274,7 +262,7 @@
     <!-- footer -->
     <footer class="footer">
         <div class="container">
-            <p class="text-center copyright mt-3 pt-3 pb-3">Copyright &copy; 2024. Designed and Built by Abi Matthews-Gordon</p>
+            <p class="text-center copyright mt-3 pt-3 pb-3">&copy; 2024. Designed and Built by Abi Matthews-Gordon</p>
         </div>
     </footer>
 
