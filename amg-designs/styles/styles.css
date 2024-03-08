@@ -10,6 +10,7 @@
     --secondary-dark: #223B3B;
     --border-color: #6FC4C2;
     --links-bgc: #ced9d8;
+    --professional-links-bgc: #9cb2b2;
     --project-links-bgc: #f2c087;
     --pages-bgc: #fbecdb;
     --volume: #d8e0e0;
@@ -72,56 +73,57 @@ body.full-page>.container-fluid>.row {
             text-transform: uppercase;
         }
     }
+}
 
-    .speaker {
-        flex-grow: 0;
-        color: var(--volume-end);
-        font-size: 20px;
-        line-height: 36px;
 
-        .volume-container {
+/********** speaker **********/
+.speaker {
+    flex-grow: 0;
+    color: var(--volume-end);
+    font-size: 20px;
+    line-height: 36px;
+    width: 64px;
+
+    .volume-container {
+        float: right;
+        display: flex;
+        align-items: flex-end;
+        gap: 4px;
+
+        .volume {
+            border: 1px solid var(--links-bgc);
+            background-color: var(--links-bgc);
             height: 100%;
-            float: right;
-            display: flex;
-            align-items: flex-end;
-            gap: 4px;
-            /* flex-direction: column; */
+            width: 4px;
 
-            .volume {
-                border: 1px solid var(--links-bgc);
-                background-color: var(--links-bgc);
-                height: 100%;
-                width: 4px;
+            &.volume-1 {
+                height: 20px;
+                margin-bottom: 3px;
+            }
 
-                &.volume-1 {
-                    height: 20px;
-                    margin-bottom: 3px;
-                }
+            &.volume-2 {
+                height: 26px;
+                margin-bottom: 3px;
+            }
 
-                &.volume-2 {
-                    height: 26px;
-                    margin-bottom: 3px;
-                }
+            &.volume-3 {
+                height: 13px;
+                margin-bottom: 3px;
+            }
 
-                &.volume-3 {
-                    height: 13px;
-                    margin-bottom: 3px;
-                }
+            &.volume-4 {
+                height: 16px;
+                margin-bottom: 3px;
+            }
 
-                &.volume-4 {
-                    height: 16px;
-                    margin-bottom: 3px;
-                }
+            &.volume-5 {
+                height: 21px;
+                margin-bottom: 3px;
+            }
 
-                &.volume-5 {
-                    height: 21px;
-                    margin-bottom: 3px;
-                }
-
-                &.volume-6 {
-                    height: 13px;
-                    margin-bottom: 3px;
-                }
+            &.volume-6 {
+                height: 13px;
+                margin-bottom: 3px;
             }
         }
     }
@@ -132,7 +134,7 @@ i.white {
 }
 
 i.green {
-    color: var(--links-bgc);
+    color: var(--professional-links-bgc);
     font-size: 25px;
 }
 
