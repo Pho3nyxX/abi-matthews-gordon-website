@@ -17,21 +17,31 @@
     <!-- content -->
     <div class="row">
         <div class="col">
-            <img src="images/left-arrow-backup-2-svgrepo-com.svg" alt="Left Arrow" class="prev">
+            <a href=""><i class="bi bi-chevron-left prev"></i></a>
 
             <div class="row align-items-center justify-content-center main-project">
-                
+
                 <div class="col-3 mt-5 portfolio-description">
                     <!-- breadcrumb -->
-                    <div class="container ps-0 breadcrumb-container" aria-label="breadcrumb">
-                        <div>
+                    <div class="container ps-0 pe-0 breadcrumb-container" aria-label="breadcrumb">
+                        <div class="condensed">
                             <a href="index.html">AMG/</a>
                             <span>Level Up</span>
                         </div>
 
-                        <div class="speaker">
-                            <i class="bi bi-volume-up-fill"></i>
+                        <div class="speaker text-end">
+                            <i class="bi bi-volume-off-fill"></i>
+
+                            <div class="volume-container">
+                                <div class="volume volume-1"></div>
+                                <div class="volume volume-2"></div>
+                                <div class="volume volume-3"></div>
+                                <div class="volume volume-4"></div>
+                                <div class="volume volume-5"></div>
+                                <div class="volume volume-6"></div>
+                            </div>
                         </div>
+
                     </div>
 
                     <!-- links -->
@@ -39,17 +49,18 @@
                         <a href="about-me.html" class="page-link about">About Me</a>
                         <a href="blog.home.html" class="page-link blog">Blog</a>
 
-                        <a href="#" ><i class="bi bi-linkedin green"></i></a>
+                        <a href="#"><i class="bi bi-linkedin green"></i></a>
                         <a href="#"><i class="bi bi-github green"></i></a>
                     </div>
 
                     <h3>Level Up</h3>
 
-                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur</p>
+                    <p class="subtitle condensed">Take the plunge! We Empower Youth!</p>
 
-                    <p class="summary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem asperiores
-                        inventore repellendus labore laborum voluptatibus amet omnis, tempora ipsa
-                        voluptas. Voluptatem praesentium aliquid blanditiis a magnam molestiae deleniti.</p>
+                    <p class="summary">This project empowers individuals with tools for in-depth knowledge and skills. Users access
+                        diverse content through a user-friendly platform, including articles, videos, and skill assessments.
+                        It offers a dynamic educational experience fostering continuous growth and proficiency for aspiring
+                        professionals or lifelong learners.</p>
 
                     <div class="project-link-container">
                         <a href="#" class="project-links"><i class="bi bi-arrow-up-right-circle-fill white"></i></a>
@@ -57,7 +68,7 @@
                         <a href="" class="read-more mt-3">Read more</a>
                     </div>
 
-                    <p class="tools">Built with</p>
+                    <p class="tools condensed">Built with</p>
 
                     <!-- tags -->
                     <div class="stack-item">
@@ -74,7 +85,7 @@
                 </div>
             </div>
 
-            <img src="images/right-arrow-backup-2-svgrepo-com.svg" alt="Right Arrow" class="next">
+            <a href=""><i class="bi bi-chevron-right next"></i></a>
 
             <!-- thumbnail -->
             <div class="row align-items-center justify-content-evenly thumbnail-section">
@@ -127,11 +138,12 @@
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="scripts/site.js"></script>
+    <!-- <script src="../node_modules/gsap/dist/all.js"></script> -->
 
     <script>
         document.addEventListener("DOMContentLoaded", (event) => {
             // load thumbnail-filter div
-            const portfolioItemContainer = document.querySelector(".thumbnail-filter");
+            const portfolioItemContainer = document.querySelector(".portfolio-thumbnails-container");
             const currentImage = document.querySelector(".current-image img");
 
             // set an event listener to run when there's a click inside the div
