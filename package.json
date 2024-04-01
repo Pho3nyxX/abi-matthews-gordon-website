@@ -6,8 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf amg-designs/dist/js/site.js && rm -rf amg-designs/dist/css/styles.css && rm -rf amg-designs/dist/fonts",
-    "init": "npm run clean && cp -r amg-designs/fonts  amg-designs/dist/ && cp -r amg-designs/images amg-designs/dist",
+    "clean": "rm -rf amg-designs/dist/*",
+    "init": "npm run clean && cp -r amg-designs/fonts  amg-designs/dist && cp -r amg-designs/images amg-designs/dist && cp -r amg-designs/*.html amg-designs/dist",
     "bundle": "npm run init && node ./esbuild.config.js",
     "build": "npm run bundle -- production",
     "start": "npm run bundle -- development"

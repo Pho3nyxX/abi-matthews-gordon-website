@@ -17,12 +17,14 @@ const buildCSS = await esbuild.context({
   loader: {
     '.png': 'file',
     '.jpg': 'file',
-    '.svg': 'dataurl'
+    '.svg': 'dataurl',
+    '.woff': 'file',
+    '.woff2': 'file'
   },
   logLevel: productionMode ? 'error' : 'info',
   minify: productionMode,
   sourcemap: !productionMode && 'linked',
-  outdir: './amg-designs/dist/css'
+  outdir: './amg-designs/dist/styles'
 
 });
 
@@ -38,7 +40,7 @@ const buildJS = await esbuild.context({
   logLevel: productionMode ? 'error' : 'info',
   minify: productionMode,
   sourcemap: !productionMode && 'linked',
-  outdir: './amg-designs/dist/js'
+  outdir: './amg-designs/dist/scripts'
 
 });
 
@@ -61,7 +63,7 @@ else {
 
   // development server
   await buildCSS.serve({
-    servedir: './build'
+    servedir: './amg-designs/dist'
   });
 
 }
