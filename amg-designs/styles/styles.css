@@ -87,6 +87,7 @@ body.full-page>.container-fluid>.row {
     font-size: 20px;
     line-height: 36px;
     width: 64px;
+    display: flex;
 
     .volume-container {
         float: right;
@@ -294,6 +295,7 @@ h6.thin {
         .speaker {
             height: 80px;
             color: #CDC9C9;
+            display: block;
         }
 
         .intro {
