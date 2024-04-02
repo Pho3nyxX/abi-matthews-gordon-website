@@ -8,6 +8,7 @@
 @import url('../../node_modules/bootstrap/dist/css/bootstrap.css');
 @import url('../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
 @import url('fonts.css');
+
 :root {
     --primary-color: #e6810f;
     --secondary-color: #3a6665;
@@ -787,6 +788,10 @@ h6.thin {
                 margin-bottom: 20px;
                 text-align: center;
 
+                &:hover {
+                    transform: translate(-0.8rem);
+                }
+
                 img {
                     width: 35px;
                     display: block;
@@ -829,8 +834,8 @@ h6.thin {
         .blog-menu-container {
             padding-right: 100px;
 
-            .first-menu-items {
-                margin-bottom: 50px;
+            div {
+                margin-bottom: 20px;
             }
 
             h5 {
@@ -847,12 +852,6 @@ h6.thin {
                 line-height: 1.78;
                 color: #737373;
             }
-
-            .blog-menu {
-                height: 220px;
-                background-color: #d7d2d2;
-                margin-bottom: 20px;
-            }
         }
 
         .blog-container-section {
@@ -863,6 +862,10 @@ h6.thin {
             .blog-container {
                 height: 635px;
                 padding: 30px;
+
+                &:hover {
+                    transform: translateY(-0.8rem);
+                }
 
                 .img-container {
                     height: 230px;
@@ -994,19 +997,20 @@ h6.thin {
     display: flex;
     margin-bottom: 100px;
 
-    i{
+    i {
         color: var(--primary-color);
         font-size: 20px;
     }
 
-    a{
+    a {
         color: var(--secondary-color);
     }
-    .left{
+
+    .left {
         padding-left: 200px;
     }
 
-    .right{
+    .right {
         padding-right: 200px;
     }
 }
