@@ -60,7 +60,7 @@ body.full-page>.container-fluid>.row {
     padding-bottom: 3px;
     border-bottom: 1px solid #3a66651e;
     display: flex;
-    margin-bottom: 20px;
+    margin: 0px;
     max-width: 380px;
 
     >div {
@@ -314,6 +314,21 @@ h6.thin {
 /* --------------------------------- */
 .home-page {
 
+    .breadcrumb-container {
+        max-width: 505px;
+        margin-bottom: 30px;
+
+        .breadcrumb {
+            a {
+                font-size: 16px;
+            }
+
+            span {
+                font-size: 18px;
+            }
+        }
+    }
+
     .description {
         >* {
             max-width: 520px;
@@ -325,13 +340,13 @@ h6.thin {
         }
 
         .intro {
-            font-size: 50px;
+            font-size: 44px;
             line-height: 1;
             margin-bottom: 20px;
             color: var(--secondary-color);
 
             >span {
-                font-size: 30px;
+                font-size: 27px;
                 color: var(--secondary-color);
                 display: block;
                 margin-bottom: 5px;
@@ -339,7 +354,7 @@ h6.thin {
         }
 
         .title {
-            font-size: 40px;
+            font-size: 36px;
             color: var(--primary-color);
             margin-bottom: 32px;
             line-height: 1;
@@ -1058,18 +1073,63 @@ h6.thin {
     }
 }
 
-
 /* **************************MEDIA QUERIES *********************** */
-
-@media (min-width: 1400px) {
-    .breadcrumb-container{
-        max-width: 505px;
-    }
-}
-
 @media (max-width: 1400px) {
-    .breadcrumb-container{
+    .breadcrumb-container {
         max-width: 505px;
+        margin-bottom: 30px;
+
+        .breadcrumb {
+            a {
+                font-size: 16px;
+            }
+
+            span {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .speaker {
+        font-size: 25px;
+
+        i {
+            line-height: 20px;
+
+            &::before {
+                line-height: 20px;
+            }
+        }
+
+        .volume-container {
+
+            .volume {
+
+                &.volume-1 {
+                    height: 16px;
+                }
+
+                &.volume-2 {
+                    height: 22px;
+                }
+
+                &.volume-3 {
+                    height: 10px;
+                }
+
+                &.volume-4 {
+                    height: 12px;
+                }
+
+                &.volume-5 {
+                    height: 17px;
+                }
+
+                &.volume-6 {
+                    height: 10px;
+                }
+            }
+        }
     }
 
     .home-page {
@@ -1162,6 +1222,133 @@ h6.thin {
                     .image-container {
                         height: 85px;
                         width: 85px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .home-page {
+
+        .description {
+            padding-top: 50px;
+            max-width: 75%;
+
+            >* {
+                max-width: 1199px;
+            }
+
+            .breadcrumb-container {
+                max-width: 1199px;
+                margin-bottom: 30px;
+
+                .breadcrumb {
+                    a {
+                        font-size: 16px;
+                    }
+
+                    span {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .name-title {
+                .intro {
+                    font-size: 50px;
+
+                    span {
+                        font-size: 30px;
+                        margin-bottom: 8px;
+                    }
+                }
+
+                .title {
+                    font-size: 35px;
+                    margin-bottom: 30px;
+                }
+            }
+
+            .details {
+                margin-bottom: 70px;
+            }
+
+            .links{
+                margin-bottom: 80px;
+            }
+        }
+
+        .portfolio-section {
+            max-width: 75%;
+
+            .portfolio-item {
+
+                .image-container {
+                    max-height: 570px;
+                    max-width: 570px;
+                }
+
+                .title {
+                    left: -81px;
+                    top: -452px;
+
+                    &::after {
+                        left: 87px;
+                        top: 34px;
+                        rotate: -245deg;
+                    }
+                }
+
+                &.focused,
+                &:hover {
+                    height: 570px;
+                    width: 570px;
+
+                    .image-container {
+                        height: 570px !important;
+                        width: 570px !important;
+                    }
+                }
+
+                &.second {
+                    left: 596px;
+                    top: 423px;
+
+                    .image-container {
+                        height: 140px;
+                        width: 140px;
+                    }
+                }
+
+                &.third {
+                    left: 590px;
+                    top: 9px;
+
+                    .image-container {
+                        height: 140px;
+                        width: 140px;
+                    }
+                }
+
+                &.fourth {
+                    left: 434px;
+                    top: 572px;
+
+                    .image-container {
+                        height: 140px;
+                        width: 140px;
+                    }
+                }
+
+                &.fifth {
+                    left: 651px;
+                    top: 215px;
+
+                    .image-container {
+                        height: 140px;
+                        width: 140px;
                     }
                 }
             }
